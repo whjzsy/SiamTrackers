@@ -1,0 +1,1176 @@
+opencv-python
+yacs
+tqdm
+pyyaml
+matplotlib
+colorama
+cython
+tensorboardX
+
+/home/ubuntu/anaconda3/envs/pytorch/bin/python /home/ubuntu/Desktop/Object_Track/SiamTrackers/tools/eval.py
+loading VOT2019: 100%|██████████████████████████████████| 60/60 [00:00<00:00, 88.96it/s, zebrafish1]
+eval ar:   0%|                                                                | 0/1 [00:00<?, ?it/s]/home/ubuntu/Desktop/Object_Track/SiamTrackers/toolkit/utils/statistics.py:54: RuntimeWarning: Mean of empty slice
+  acc = np.nanmean(overlaps)
+eval ar: 100%|████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.99it/s]
+eval eao: 100%|███████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.58it/s]
+------------------------------------------------------------
+|Tracker Name| Accuracy | Robustness | Lost Number |  EAO  |
+------------------------------------------------------------
+|   model    |  0.606   |   0.477    |    95.0     | 0.296 |
+------------------------------------------------------------
+
+Process finished with exit code 0
+
+/home/ubuntu/anaconda3/envs/pytorch/bin/python /home/ubuntu/Desktop/Object_Track/SiamTrackers/evaluate_flow/eval.py
+loading VOT2019: 100%|██████████████████████████████████| 60/60 [00:01<00:00, 52.38it/s, zebrafish1]
+eval ar:   0%|                                                                | 0/1 [00:00<?, ?it/s]/home/ubuntu/Desktop/Object_Track/SiamTrackers/toolkit/utils/statistics.py:54: RuntimeWarning: Mean of empty slice
+  acc = np.nanmean(overlaps)
+eval ar: 100%|████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.72it/s]
+eval eao: 100%|███████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.32it/s]
+------------------------------------------------------------
+|Tracker Name| Accuracy | Robustness | Lost Number |  EAO  |
+------------------------------------------------------------
+|   model    |  0.595   |   0.467    |    93.0     | 0.287 |
+------------------------------------------------------------
+
+Process finished with exit code 0
+
+/home/ubuntu/anaconda3/envs/pytorch/bin/python /home/ubuntu/Desktop/Object_Track/SiamTrackers/tools/test.py
+loading VOT2018: 100%|██████████████████████████████████| 60/60 [00:07<00:00,  7.68it/s, zebrafish1]
+(  1) Video: ants1        Time: 17.6s Speed: 18.4fps Lost: 0
+(  2) Video: ants3        Time: 28.9s Speed: 20.0fps Lost: 1
+(  3) Video: bag          Time: 10.1s Speed: 19.2fps Lost: 0
+(  4) Video: ball1        Time:  5.3s Speed: 19.5fps Lost: 0
+(  5) Video: ball2        Time:  2.1s Speed: 19.5fps Lost: 0
+(  6) Video: basketball   Time: 37.5s Speed: 19.3fps Lost: 1
+(  7) Video: birds1       Time: 17.2s Speed: 19.6fps Lost: 0
+(  8) Video: blanket      Time: 11.3s Speed: 19.8fps Lost: 1
+(  9) Video: bmx          Time:  4.0s Speed: 19.0fps Lost: 0
+( 10) Video: bolt1        Time: 17.8s Speed: 19.6fps Lost: 0
+( 11) Video: bolt2        Time: 14.8s Speed: 19.7fps Lost: 1
+( 12) Video: book         Time:  8.7s Speed: 20.0fps Lost: 1
+( 13) Video: butterfly    Time:  7.8s Speed: 19.1fps Lost: 0
+( 14) Video: car1         Time: 39.1s Speed: 19.0fps Lost: 0
+( 15) Video: conduction1  Time: 17.7s Speed: 19.5fps Lost: 0
+( 16) Video: crabs1       Time:  7.5s Speed: 21.2fps Lost: 3
+( 17) Video: crossing     Time:  6.9s Speed: 18.8fps Lost: 0
+( 18) Video: dinosaur     Time: 16.7s Speed: 19.5fps Lost: 2
+( 19) Video: drone1       Time: 17.5s Speed: 20.2fps Lost: 3
+( 20) Video: drone_across Time:  7.6s Speed: 19.2fps Lost: 0
+( 21) Video: drone_flip   Time:  5.3s Speed: 21.0fps Lost: 2
+( 22) Video: fernando     Time: 14.9s Speed: 19.5fps Lost: 2
+( 23) Video: fish1        Time: 18.8s Speed: 19.5fps Lost: 1
+( 24) Video: fish2        Time: 15.9s Speed: 19.5fps Lost: 1
+( 25) Video: fish3        Time: 26.9s Speed: 19.2fps Lost: 0
+( 26) Video: flamingo1    Time: 70.0s Speed: 19.7fps Lost: 2
+( 27) Video: frisbee      Time: 12.3s Speed: 20.1fps Lost: 1
+( 28) Video: girl         Time: 78.7s Speed: 19.1fps Lost: 2
+( 29) Video: glove        Time:  6.1s Speed: 19.6fps Lost: 1
+( 30) Video: godfather    Time: 18.9s Speed: 19.3fps Lost: 1
+( 31) Video: graduate     Time: 44.8s Speed: 18.8fps Lost: 0
+( 32) Video: gymnastics1  Time: 29.4s Speed: 19.3fps Lost: 0
+( 33) Video: gymnastics2  Time: 12.5s Speed: 19.1fps Lost: 0
+( 34) Video: gymnastics3  Time:  5.9s Speed: 19.7fps Lost: 1
+( 35) Video: hand         Time: 13.9s Speed: 19.1fps Lost: 1
+( 36) Video: handball1    Time: 19.2s Speed: 19.6fps Lost: 2
+( 37) Video: handball2    Time: 20.2s Speed: 19.8fps Lost: 3
+( 38) Video: helicopter   Time: 37.2s Speed: 19.0fps Lost: 1
+( 39) Video: iceskater1   Time: 34.9s Speed: 18.9fps Lost: 0
+( 40) Video: iceskater2   Time: 37.6s Speed: 18.8fps Lost: 1
+( 41) Video: leaves       Time:  2.9s Speed: 21.4fps Lost: 2
+( 42) Video: matrix       Time:  5.2s Speed: 19.1fps Lost: 0
+( 43) Video: motocross1   Time:  8.4s Speed: 19.4fps Lost: 1
+( 44) Video: motocross2   Time:  3.3s Speed: 18.2fps Lost: 0
+( 45) Video: nature       Time: 52.5s Speed: 19.0fps Lost: 3
+( 46) Video: pedestrian1  Time:  7.1s Speed: 19.5fps Lost: 0
+( 47) Video: rabbit       Time:  7.4s Speed: 21.3fps Lost: 3
+( 48) Video: racing       Time:  8.0s Speed: 19.3fps Lost: 0
+( 49) Video: road         Time: 28.7s Speed: 19.4fps Lost: 0
+( 50) Video: shaking      Time: 19.0s Speed: 19.1fps Lost: 0
+( 51) Video: sheep        Time: 13.0s Speed: 19.2fps Lost: 0
+( 52) Video: singer2      Time: 19.8s Speed: 18.4fps Lost: 0
+( 53) Video: singer3      Time:  6.8s Speed: 19.1fps Lost: 0
+( 54) Video: soccer1      Time: 19.9s Speed: 19.6fps Lost: 3
+( 55) Video: soccer2      Time:  6.2s Speed: 20.5fps Lost: 1
+( 56) Video: soldier      Time:  6.9s Speed: 19.9fps Lost: 1
+( 57) Video: tiger        Time: 19.2s Speed: 19.0fps Lost: 0
+( 58) Video: traffic      Time:  9.8s Speed: 19.3fps Lost: 0
+( 59) Video: wiper        Time: 17.6s Speed: 19.3fps Lost: 1
+( 60) Video: zebrafish1   Time: 20.5s Speed: 19.4fps Lost: 0
+model total lost: 50
+
+Process finished with exit code 0
+
+/home/ubuntu/anaconda3/envs/pytorch/bin/python /home/ubuntu/Desktop/Object_Track/SiamTrackers/tools/eval.py
+loading VOT2018: 100%|██████████████████████████████████| 60/60 [00:05<00:00, 10.24it/s, zebrafish1]
+eval ar: 100%|████████████████████████████████████████████████████████| 1/1 [00:01<00:00,  1.31s/it]
+eval eao: 100%|███████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.26it/s]
+------------------------------------------------------------
+|Tracker Name| Accuracy | Robustness | Lost Number |  EAO  |
+------------------------------------------------------------
+|   model    |  0.601   |   0.234    |    50.0     | 0.415 |
+------------------------------------------------------------
+
+Process finished with exit code 0
+
+# update_score = 0.9
+/home/ubuntu/anaconda3/envs/pytorch/bin/python /home/ubuntu/Desktop/Object_Track/SiamTrackers/tools/test.py
+loading VOT2018: 100%|██████████████████████████████████| 60/60 [00:01<00:00, 57.16it/s, zebrafish1]
+(  1) Video: ants1        Time: 24.1s Speed: 13.4fps Lost: 0
+(  2) Video: ants3        Time: 38.7s Speed: 14.9fps Lost: 2
+(  3) Video: bag          Time: 12.1s Speed: 16.1fps Lost: 0
+(  4) Video: ball1        Time:  7.3s Speed: 14.2fps Lost: 0
+(  5) Video: ball2        Time:  3.1s Speed: 13.0fps Lost: 0
+(  6) Video: basketball   Time: 46.0s Speed: 15.7fps Lost: 1
+(  7) Video: birds1       Time: 24.1s Speed: 14.0fps Lost: 1
+(  8) Video: blanket      Time: 13.5s Speed: 16.6fps Lost: 1
+(  9) Video: bmx          Time:  5.1s Speed: 14.7fps Lost: 0
+( 10) Video: bolt1        Time: 21.8s Speed: 16.0fps Lost: 0
+( 11) Video: bolt2        Time: 19.9s Speed: 14.7fps Lost: 0
+( 12) Video: book         Time: 10.6s Speed: 16.5fps Lost: 2
+( 13) Video: butterfly    Time:  9.8s Speed: 15.3fps Lost: 0
+( 14) Video: car1         Time: 47.9s Speed: 15.5fps Lost: 0
+( 15) Video: conduction1  Time: 23.8s Speed: 14.4fps Lost: 3
+( 16) Video: crabs1       Time: 11.4s Speed: 14.0fps Lost: 3
+( 17) Video: crossing     Time:  9.8s Speed: 13.2fps Lost: 0
+( 18) Video: dinosaur     Time: 18.9s Speed: 17.2fps Lost: 2
+( 19) Video: drone1       Time: 24.5s Speed: 14.5fps Lost: 6
+( 20) Video: drone_across Time: 10.8s Speed: 13.5fps Lost: 0
+( 21) Video: drone_flip   Time:  8.1s Speed: 13.8fps Lost: 1
+( 22) Video: fernando     Time: 18.5s Speed: 15.7fps Lost: 1
+( 23) Video: fish1        Time: 21.7s Speed: 16.8fps Lost: 4
+( 24) Video: fish2        Time: 19.4s Speed: 16.0fps Lost: 2
+( 25) Video: fish3        Time: 33.3s Speed: 15.5fps Lost: 0
+( 26) Video: flamingo1    Time: 99.9s Speed: 13.8fps Lost: 2
+( 27) Video: frisbee      Time: 21.3s Speed: 11.6fps Lost: 1
+( 28) Video: girl         Time: 103.8s Speed: 14.4fps Lost: 2
+( 29) Video: glove        Time:  8.1s Speed: 14.7fps Lost: 1
+( 30) Video: godfather    Time: 24.2s Speed: 15.1fps Lost: 1
+( 31) Video: graduate     Time: 56.1s Speed: 15.0fps Lost: 0
+( 32) Video: gymnastics1  Time: 37.4s Speed: 15.1fps Lost: 1
+( 33) Video: gymnastics2  Time: 17.7s Speed: 13.5fps Lost: 0
+( 34) Video: gymnastics3  Time:  8.0s Speed: 14.6fps Lost: 2
+( 35) Video: hand         Time: 15.0s Speed: 17.7fps Lost: 1
+( 36) Video: handball1    Time: 24.7s Speed: 15.2fps Lost: 0
+( 37) Video: handball2    Time: 26.3s Speed: 15.3fps Lost: 3
+( 38) Video: helicopter   Time: 50.0s Speed: 14.1fps Lost: 1
+( 39) Video: iceskater1   Time: 45.3s Speed: 14.6fps Lost: 0
+( 40) Video: iceskater2   Time: 46.0s Speed: 15.4fps Lost: 1
+( 41) Video: leaves       Time:  4.3s Speed: 14.3fps Lost: 1
+( 42) Video: matrix       Time:  6.5s Speed: 15.2fps Lost: 1
+( 43) Video: motocross1   Time: 10.7s Speed: 15.2fps Lost: 1
+( 44) Video: motocross2   Time:  4.8s Speed: 12.4fps Lost: 0
+( 45) Video: nature       Time: 67.5s Speed: 14.8fps Lost: 2
+( 46) Video: pedestrian1  Time:  9.4s Speed: 14.8fps Lost: 0
+( 47) Video: rabbit       Time:  9.8s Speed: 15.9fps Lost: 4
+( 48) Video: racing       Time: 10.6s Speed: 14.6fps Lost: 0
+( 49) Video: road         Time: 40.0s Speed: 13.9fps Lost: 0
+( 50) Video: shaking      Time: 22.8s Speed: 15.9fps Lost: 0
+( 51) Video: sheep        Time: 16.9s Speed: 14.8fps Lost: 0
+( 52) Video: singer2      Time: 23.9s Speed: 15.3fps Lost: 0
+( 53) Video: singer3      Time:  8.6s Speed: 15.1fps Lost: 1
+( 54) Video: soccer1      Time: 24.1s Speed: 16.2fps Lost: 4
+( 55) Video: soccer2      Time:  9.2s Speed: 13.9fps Lost: 1
+( 56) Video: soldier      Time:  9.6s Speed: 14.3fps Lost: 0
+( 57) Video: tiger        Time: 23.6s Speed: 15.5fps Lost: 0
+( 58) Video: traffic      Time: 13.6s Speed: 14.0fps Lost: 0
+( 59) Video: wiper        Time: 22.7s Speed: 15.0fps Lost: 2
+( 60) Video: zebrafish1   Time: 36.6s Speed: 10.9fps Lost: 0
+checkpoint_e5000 total lost: 62
+
+Process finished with exit code 0
+
+/home/ubuntu/anaconda3/envs/pytorch/bin/python /home/ubuntu/Desktop/Object_Track/SiamTrackers/tools/eval.py
+loading VOT2018: 100%|██████████████████████████████████| 60/60 [00:02<00:00, 26.72it/s, zebrafish1]
+eval ar: 100%|████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.28it/s]
+eval eao: 100%|███████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.48it/s]
+------------------------------------------------------------------
+|   Tracker Name   | Accuracy | Robustness | Lost Number |  EAO  |
+------------------------------------------------------------------
+| checkpoint_e5000 |  0.591   |   0.290    |    62.0     | 0.359 |
+------------------------------------------------------------------
+
+Process finished with exit code 0
+
+# update_score = 0.85
+/home/ubuntu/anaconda3/envs/pytorch/bin/python /home/ubuntu/Desktop/Object_Track/SiamTrackers/tools/test.py
+loading VOT2018: 100%|██████████████████████████████████| 60/60 [00:14<00:00,  4.14it/s, zebrafish1]
+(  1) Video: ants1        Time: 27.9s Speed: 11.6fps Lost: 0
+(  2) Video: ants3        Time: 42.3s Speed: 13.7fps Lost: 2
+(  3) Video: bag          Time: 13.6s Speed: 14.4fps Lost: 0
+(  4) Video: ball1        Time:  7.8s Speed: 13.4fps Lost: 0
+(  5) Video: ball2        Time:  3.2s Speed: 12.4fps Lost: 0
+(  6) Video: basketball   Time: 46.2s Speed: 15.7fps Lost: 1
+(  7) Video: birds1       Time: 24.4s Speed: 13.9fps Lost: 1
+(  8) Video: blanket      Time: 14.0s Speed: 16.0fps Lost: 1
+(  9) Video: bmx          Time:  5.3s Speed: 14.1fps Lost: 0
+( 10) Video: bolt1        Time: 21.9s Speed: 15.9fps Lost: 0
+( 11) Video: bolt2        Time: 19.9s Speed: 14.7fps Lost: 0
+( 12) Video: book         Time: 10.6s Speed: 16.4fps Lost: 2
+( 13) Video: butterfly    Time:  9.8s Speed: 15.2fps Lost: 0
+( 14) Video: car1         Time: 47.6s Speed: 15.6fps Lost: 0
+( 15) Video: conduction1  Time: 24.0s Speed: 14.3fps Lost: 3
+( 16) Video: crabs1       Time: 11.2s Speed: 14.2fps Lost: 3
+( 17) Video: crossing     Time:  9.9s Speed: 13.1fps Lost: 0
+( 18) Video: dinosaur     Time: 18.9s Speed: 17.2fps Lost: 2
+( 19) Video: drone1       Time: 24.5s Speed: 14.4fps Lost: 6
+( 20) Video: drone_across Time: 10.7s Speed: 13.7fps Lost: 0
+( 21) Video: drone_flip   Time:  8.3s Speed: 13.4fps Lost: 0
+( 22) Video: fernando     Time: 18.4s Speed: 15.8fps Lost: 1
+( 23) Video: fish1        Time: 21.6s Speed: 16.9fps Lost: 4
+( 24) Video: fish2        Time: 19.2s Speed: 16.1fps Lost: 2
+( 25) Video: fish3        Time: 32.6s Speed: 15.9fps Lost: 0
+( 26) Video: flamingo1    Time: 99.6s Speed: 13.8fps Lost: 2
+( 27) Video: frisbee      Time: 21.2s Speed: 11.6fps Lost: 1
+( 28) Video: girl         Time: 103.8s Speed: 14.4fps Lost: 2
+( 29) Video: glove        Time:  8.0s Speed: 14.8fps Lost: 1
+( 30) Video: godfather    Time: 24.0s Speed: 15.2fps Lost: 1
+( 31) Video: graduate     Time: 56.5s Speed: 14.9fps Lost: 0
+( 32) Video: gymnastics1  Time: 37.7s Speed: 15.0fps Lost: 1
+( 33) Video: gymnastics2  Time: 17.6s Speed: 13.6fps Lost: 0
+( 34) Video: gymnastics3  Time:  8.3s Speed: 14.1fps Lost: 2
+( 35) Video: hand         Time: 15.3s Speed: 17.4fps Lost: 1
+( 36) Video: handball1    Time: 26.0s Speed: 14.5fps Lost: 0
+( 37) Video: handball2    Time: 25.8s Speed: 15.6fps Lost: 3
+( 38) Video: helicopter   Time: 49.5s Speed: 14.3fps Lost: 1
+( 39) Video: iceskater1   Time: 45.4s Speed: 14.6fps Lost: 0
+( 40) Video: iceskater2   Time: 46.1s Speed: 15.3fps Lost: 1
+( 41) Video: leaves       Time:  4.5s Speed: 13.9fps Lost: 1
+( 42) Video: matrix       Time:  6.6s Speed: 15.1fps Lost: 1
+( 43) Video: motocross1   Time: 11.0s Speed: 14.9fps Lost: 1
+( 44) Video: motocross2   Time:  4.7s Speed: 12.7fps Lost: 0
+( 45) Video: nature       Time: 67.3s Speed: 14.8fps Lost: 2
+( 46) Video: pedestrian1  Time:  9.1s Speed: 15.2fps Lost: 0
+( 47) Video: rabbit       Time:  9.9s Speed: 15.8fps Lost: 4
+( 48) Video: racing       Time: 10.5s Speed: 14.7fps Lost: 0
+( 49) Video: road         Time: 39.8s Speed: 14.0fps Lost: 0
+( 50) Video: shaking      Time: 23.0s Speed: 15.8fps Lost: 0
+( 51) Video: sheep        Time: 17.2s Speed: 14.6fps Lost: 0
+( 52) Video: singer2      Time: 23.5s Speed: 15.5fps Lost: 0
+( 53) Video: singer3      Time:  8.7s Speed: 14.9fps Lost: 1
+( 54) Video: soccer1      Time: 24.2s Speed: 16.2fps Lost: 4
+( 55) Video: soccer2      Time:  9.2s Speed: 13.9fps Lost: 1
+( 56) Video: soldier      Time:  9.7s Speed: 14.1fps Lost: 0
+( 57) Video: tiger        Time: 23.5s Speed: 15.5fps Lost: 0
+( 58) Video: traffic      Time: 13.6s Speed: 13.9fps Lost: 0
+( 59) Video: wiper        Time: 23.1s Speed: 14.7fps Lost: 2
+( 60) Video: zebrafish1   Time: 36.7s Speed: 10.9fps Lost: 0
+checkpoint_e5000 total lost: 61
+
+Process finished with exit code 0
+
+/home/ubuntu/anaconda3/envs/pytorch/bin/python /home/ubuntu/Desktop/Object_Track/SiamTrackers/tools/eval.py
+loading VOT2018: 100%|██████████████████████████████████| 60/60 [00:04<00:00, 12.82it/s, zebrafish1]
+eval ar: 100%|████████████████████████████████████████████████████████| 1/1 [00:01<00:00,  1.08s/it]
+eval eao: 100%|███████████████████████████████████████████████████████| 1/1 [00:01<00:00,  1.03s/it]
+------------------------------------------------------------------
+|   Tracker Name   | Accuracy | Robustness | Lost Number |  EAO  |
+------------------------------------------------------------------
+| checkpoint_e5000 |  0.591   |   0.286    |    61.0     | 0.362 |
+------------------------------------------------------------------
+
+Process finished with exit code 0
+
+
+/home/ubuntu/anaconda3/envs/pytorch/bin/python /home/ubuntu/Desktop/Object_Track/SiamTrackers/tools/test.py
+loading VOT2018: 100%|██████████████████████████████████| 60/60 [00:01<00:00, 36.01it/s, zebrafish1]
+(  1) Video: ants1        Time: 23.6s Speed: 13.7fps Lost: 0
+(  2) Video: ants3        Time: 41.2s Speed: 14.0fps Lost: 2
+(  3) Video: bag          Time: 13.5s Speed: 14.4fps Lost: 0
+(  4) Video: ball1        Time:  7.7s Speed: 13.6fps Lost: 0
+(  5) Video: ball2        Time:  3.0s Speed: 13.2fps Lost: 0
+(  6) Video: basketball   Time: 45.9s Speed: 15.8fps Lost: 1
+(  7) Video: birds1       Time: 24.3s Speed: 13.9fps Lost: 1
+(  8) Video: blanket      Time: 13.1s Speed: 17.2fps Lost: 1
+(  9) Video: bmx          Time:  5.0s Speed: 15.1fps Lost: 0
+( 10) Video: bolt1        Time: 21.8s Speed: 16.0fps Lost: 0
+( 11) Video: bolt2        Time: 20.0s Speed: 14.6fps Lost: 0
+( 12) Video: book         Time: 10.2s Speed: 17.0fps Lost: 2
+( 13) Video: butterfly    Time:  9.6s Speed: 15.7fps Lost: 0
+( 14) Video: car1         Time: 47.3s Speed: 15.7fps Lost: 0
+( 15) Video: conduction1  Time: 23.4s Speed: 14.7fps Lost: 3
+( 16) Video: crabs1       Time: 11.1s Speed: 14.3fps Lost: 3
+( 17) Video: crossing     Time:  9.8s Speed: 13.3fps Lost: 0
+( 18) Video: dinosaur     Time: 18.6s Speed: 17.5fps Lost: 2
+( 19) Video: drone1       Time: 24.2s Speed: 14.6fps Lost: 6
+( 20) Video: drone_across Time: 10.3s Speed: 14.2fps Lost: 0
+( 21) Video: drone_flip   Time:  7.6s Speed: 14.8fps Lost: 1
+( 22) Video: fernando     Time: 18.1s Speed: 16.1fps Lost: 1
+( 23) Video: fish1        Time: 21.5s Speed: 17.0fps Lost: 4
+( 24) Video: fish2        Time: 19.1s Speed: 16.2fps Lost: 2
+( 25) Video: fish3        Time: 32.7s Speed: 15.8fps Lost: 0
+( 26) Video: flamingo1    Time: 99.0s Speed: 13.9fps Lost: 2
+( 27) Video: frisbee      Time: 20.2s Speed: 12.2fps Lost: 1
+( 28) Video: girl         Time: 103.6s Speed: 14.5fps Lost: 2
+( 29) Video: glove        Time:  7.9s Speed: 15.0fps Lost: 1
+( 30) Video: godfather    Time: 23.8s Speed: 15.4fps Lost: 1
+( 31) Video: graduate     Time: 55.4s Speed: 15.2fps Lost: 0
+( 32) Video: gymnastics1  Time: 37.1s Speed: 15.2fps Lost: 1
+( 33) Video: gymnastics2  Time: 17.3s Speed: 13.8fps Lost: 0
+( 34) Video: gymnastics3  Time:  8.2s Speed: 14.3fps Lost: 2
+( 35) Video: hand         Time: 14.9s Speed: 17.8fps Lost: 1
+( 36) Video: handball1    Time: 25.2s Speed: 14.9fps Lost: 0
+( 37) Video: handball2    Time: 25.5s Speed: 15.7fps Lost: 3
+( 38) Video: helicopter   Time: 49.5s Speed: 14.3fps Lost: 1
+( 39) Video: iceskater1   Time: 45.4s Speed: 14.5fps Lost: 0
+( 40) Video: iceskater2   Time: 45.5s Speed: 15.5fps Lost: 1
+( 41) Video: leaves       Time:  4.2s Speed: 14.9fps Lost: 1
+( 42) Video: matrix       Time:  6.5s Speed: 15.3fps Lost: 1
+( 43) Video: motocross1   Time: 10.6s Speed: 15.4fps Lost: 1
+( 44) Video: motocross2   Time:  4.7s Speed: 12.8fps Lost: 0
+( 45) Video: nature       Time: 66.2s Speed: 15.1fps Lost: 2
+( 46) Video: pedestrian1  Time:  9.2s Speed: 15.1fps Lost: 0
+( 47) Video: rabbit       Time:  9.6s Speed: 16.4fps Lost: 4
+( 48) Video: racing       Time: 10.6s Speed: 14.6fps Lost: 0
+( 49) Video: road         Time: 38.8s Speed: 14.3fps Lost: 0
+( 50) Video: shaking      Time: 22.5s Speed: 16.2fps Lost: 0
+( 51) Video: sheep        Time: 17.2s Speed: 14.6fps Lost: 0
+( 52) Video: singer2      Time: 23.4s Speed: 15.6fps Lost: 0
+( 53) Video: singer3      Time:  8.6s Speed: 15.2fps Lost: 1
+( 54) Video: soccer1      Time: 23.9s Speed: 16.4fps Lost: 4
+( 55) Video: soccer2      Time:  9.1s Speed: 14.1fps Lost: 1
+( 56) Video: soldier      Time:  9.4s Speed: 14.6fps Lost: 0
+( 57) Video: tiger        Time: 23.4s Speed: 15.5fps Lost: 0
+( 58) Video: traffic      Time: 13.6s Speed: 14.0fps Lost: 0
+( 59) Video: wiper        Time: 22.6s Speed: 15.1fps Lost: 2
+( 60) Video: zebrafish1   Time: 36.5s Speed: 10.9fps Lost: 0
+checkpoint_e5000 total lost: 62
+
+Process finished with exit code 0
+/home/ubuntu/anaconda3/envs/pytorch/bin/python /home/ubuntu/Desktop/Object_Track/SiamTrackers/tools/eval.py
+loading VOT2018: 100%|██████████████████████████████████| 60/60 [00:02<00:00, 23.27it/s, zebrafish1]
+eval ar: 100%|████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.08it/s]
+eval eao: 100%|███████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.21it/s]
+------------------------------------------------------------------
+|   Tracker Name   | Accuracy | Robustness | Lost Number |  EAO  |
+------------------------------------------------------------------
+| checkpoint_e5000 |  0.591   |   0.290    |    62.0     | 0.358 |
+------------------------------------------------------------------
+
+Process finished with exit code 0
+
+# 全图LK算法
+/home/ubuntu/anaconda3/envs/pytorch/bin/python /home/ubuntu/Desktop/Object_Track/SiamTrackers/tools/test.py
+loading VOT2018: 100%|██████████████████████████████████| 60/60 [00:01<00:00, 32.71it/s, zebrafish1]
+(  1) Video: ants1        Time: 35.0s Speed: 9.3fps Lost: 0
+(  2) Video: ants3        Time: 60.5s Speed: 9.5fps Lost: 2
+(  3) Video: bag          Time: 16.3s Speed: 12.0fps Lost: 0
+(  4) Video: ball1        Time: 10.7s Speed: 9.7fps Lost: 0
+(  5) Video: ball2        Time:  4.2s Speed: 9.5fps Lost: 0
+(  6) Video: basketball   Time: 61.1s Speed: 11.9fps Lost: 1
+(  7) Video: birds1       Time: 34.8s Speed: 9.7fps Lost: 0
+(  8) Video: blanket      Time: 18.2s Speed: 12.3fps Lost: 1
+(  9) Video: bmx          Time:  7.6s Speed: 9.9fps Lost: 0
+( 10) Video: bolt1        Time: 29.9s Speed: 11.7fps Lost: 0
+( 11) Video: bolt2        Time: 22.8s Speed: 12.8fps Lost: 2
+( 12) Video: book         Time: 14.7s Speed: 11.8fps Lost: 1
+( 13) Video: butterfly    Time: 13.1s Speed: 11.4fps Lost: 0
+( 14) Video: car1         Time: 64.5s Speed: 11.5fps Lost: 0
+( 15) Video: conduction1  Time: 34.5s Speed: 10.0fps Lost: 2
+( 16) Video: crabs1       Time: 15.2s Speed: 10.4fps Lost: 3
+( 17) Video: crossing     Time: 13.0s Speed: 10.0fps Lost: 0
+( 18) Video: dinosaur     Time: 26.4s Speed: 12.3fps Lost: 1
+( 19) Video: drone1       Time: 31.8s Speed: 11.1fps Lost: 9
+( 20) Video: drone_across Time: 15.0s Speed: 9.7fps Lost: 0
+( 21) Video: drone_flip   Time: 10.0s Speed: 11.2fps Lost: 3
+( 22) Video: fernando     Time: 25.1s Speed: 11.6fps Lost: 1
+( 23) Video: fish1        Time: 30.0s Speed: 12.2fps Lost: 1
+( 24) Video: fish2        Time: 25.4s Speed: 12.2fps Lost: 2
+( 25) Video: fish3        Time: 44.0s Speed: 11.8fps Lost: 0
+( 26) Video: flamingo1    Time: 140.7s Speed: 9.8fps Lost: 2
+( 27) Video: frisbee      Time: 32.5s Speed: 7.6fps Lost: 1
+( 28) Video: girl         Time: 128.7s Speed: 11.6fps Lost: 4
+( 29) Video: glove        Time: 10.1s Speed: 11.7fps Lost: 1
+( 30) Video: godfather    Time: 29.2s Speed: 12.5fps Lost: 1
+( 31) Video: graduate     Time: 69.1s Speed: 12.2fps Lost: 0
+( 32) Video: gymnastics1  Time: 45.4s Speed: 12.5fps Lost: 1
+( 33) Video: gymnastics2  Time: 24.5s Speed: 9.8fps Lost: 1
+( 34) Video: gymnastics3  Time: 11.9s Speed: 9.8fps Lost: 1
+( 35) Video: hand         Time: 20.6s Speed: 12.9fps Lost: 2
+( 36) Video: handball1    Time: 30.7s Speed: 12.3fps Lost: 1
+( 37) Video: handball2    Time: 35.8s Speed: 11.2fps Lost: 1
+( 38) Video: helicopter   Time: 63.7s Speed: 11.1fps Lost: 0
+( 39) Video: iceskater1   Time: 54.4s Speed: 12.1fps Lost: 0
+( 40) Video: iceskater2   Time: 59.4s Speed: 11.9fps Lost: 1
+( 41) Video: leaves       Time:  5.0s Speed: 12.4fps Lost: 3
+( 42) Video: matrix       Time:  8.8s Speed: 11.3fps Lost: 0
+( 43) Video: motocross1   Time: 13.2s Speed: 12.4fps Lost: 1
+( 44) Video: motocross2   Time:  6.4s Speed: 9.4fps Lost: 0
+( 45) Video: nature       Time: 91.8s Speed: 10.9fps Lost: 4
+( 46) Video: pedestrian1  Time: 11.1s Speed: 12.5fps Lost: 0
+( 47) Video: rabbit       Time: 12.8s Speed: 12.2fps Lost: 2
+( 48) Video: racing       Time: 13.6s Speed: 11.4fps Lost: 0
+( 49) Video: road         Time: 55.2s Speed: 10.1fps Lost: 0
+( 50) Video: shaking      Time: 30.6s Speed: 11.9fps Lost: 0
+( 51) Video: sheep        Time: 20.7s Speed: 12.1fps Lost: 0
+( 52) Video: singer2      Time: 31.1s Speed: 11.7fps Lost: 0
+( 53) Video: singer3      Time: 11.7s Speed: 11.1fps Lost: 0
+( 54) Video: soccer1      Time: 31.7s Speed: 12.3fps Lost: 5
+( 55) Video: soccer2      Time: 12.3s Speed: 10.4fps Lost: 1
+( 56) Video: soldier      Time: 14.1s Speed: 9.7fps Lost: 1
+( 57) Video: tiger        Time: 31.8s Speed: 11.4fps Lost: 0
+( 58) Video: traffic      Time: 19.4s Speed: 9.8fps Lost: 0
+( 59) Video: wiper        Time: 28.9s Speed: 11.8fps Lost: 1
+( 60) Video: zebrafish1   Time: 52.7s Speed: 7.6fps Lost: 3
+model total lost: 67
+
+Process finished with exit code 0
+
+/home/ubuntu/anaconda3/envs/pytorch/bin/python /home/ubuntu/Desktop/Object_Track/SiamTrackers/tools/eval.py
+loading VOT2018: 100%|██████████████████████████████████| 60/60 [00:01<00:00, 38.49it/s, zebrafish1]
+eval ar: 100%|████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.01it/s]
+eval eao: 100%|███████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.56it/s]
+------------------------------------------------------------
+|Tracker Name| Accuracy | Robustness | Lost Number |  EAO  |
+------------------------------------------------------------
+|   model    |  0.606   |   0.314    |    67.0     | 0.355 |
+------------------------------------------------------------
+
+Process finished with exit code 0
+
+# 搜索区域LK算法
+/home/ubuntu/anaconda3/envs/pytorch/bin/python /home/ubuntu/Desktop/Object_Track/SiamTrackers/tools/test.py
+loading VOT2018: 100%|██████████████████████████████████| 60/60 [00:01<00:00, 54.17it/s, zebrafish1]
+(  1) Video: ants1        Time: 33.8s Speed: 9.6fps Lost: 1
+(  2) Video: ants3        Time: 60.4s Speed: 9.6fps Lost: 1
+(  3) Video: bag          Time: 15.9s Speed: 12.3fps Lost: 0
+(  4) Video: ball1        Time: 10.6s Speed: 9.8fps Lost: 0
+(  5) Video: ball2        Time:  4.1s Speed: 9.8fps Lost: 0
+(  6) Video: basketball   Time: 60.5s Speed: 12.0fps Lost: 2
+(  7) Video: birds1       Time: 34.9s Speed: 9.7fps Lost: 0
+(  8) Video: blanket      Time: 18.0s Speed: 12.4fps Lost: 1
+(  9) Video: bmx          Time:  7.5s Speed: 10.0fps Lost: 0
+( 10) Video: bolt1        Time: 28.9s Speed: 12.1fps Lost: 1
+( 11) Video: bolt2        Time: 23.4s Speed: 12.5fps Lost: 2
+( 12) Video: book         Time: 14.5s Speed: 12.0fps Lost: 1
+( 13) Video: butterfly    Time: 13.1s Speed: 11.4fps Lost: 0
+( 14) Video: car1         Time: 64.2s Speed: 11.5fps Lost: 0
+( 15) Video: conduction1  Time: 33.1s Speed: 10.4fps Lost: 4
+( 16) Video: crabs1       Time: 14.7s Speed: 10.9fps Lost: 3
+( 17) Video: crossing     Time: 13.1s Speed: 9.9fps Lost: 0
+( 18) Video: dinosaur     Time: 26.2s Speed: 12.4fps Lost: 1
+( 19) Video: drone1       Time: 33.8s Speed: 10.5fps Lost: 4
+( 20) Video: drone_across Time: 14.8s Speed: 9.9fps Lost: 0
+( 21) Video: drone_flip   Time: 11.0s Speed: 10.2fps Lost: 1
+( 22) Video: fernando     Time: 25.0s Speed: 11.6fps Lost: 1
+( 23) Video: fish1        Time: 29.5s Speed: 12.4fps Lost: 1
+( 24) Video: fish2        Time: 25.2s Speed: 12.2fps Lost: 2
+( 25) Video: fish3        Time: 43.7s Speed: 11.9fps Lost: 0
+( 26) Video: flamingo1    Time: 138.8s Speed: 9.9fps Lost: 2
+( 27) Video: frisbee      Time: 32.3s Speed: 7.6fps Lost: 2
+( 28) Video: girl         Time: 129.0s Speed: 11.6fps Lost: 3
+( 29) Video: glove        Time:  9.3s Speed: 12.9fps Lost: 2
+( 30) Video: godfather    Time: 29.1s Speed: 12.6fps Lost: 1
+( 31) Video: graduate     Time: 69.2s Speed: 12.2fps Lost: 0
+( 32) Video: gymnastics1  Time: 46.1s Speed: 12.3fps Lost: 0
+( 33) Video: gymnastics2  Time: 24.1s Speed: 9.9fps Lost: 1
+( 34) Video: gymnastics3  Time: 11.0s Speed: 10.6fps Lost: 2
+( 35) Video: hand         Time: 21.3s Speed: 12.5fps Lost: 1
+( 36) Video: handball1    Time: 30.5s Speed: 12.3fps Lost: 1
+( 37) Video: handball2    Time: 35.4s Speed: 11.3fps Lost: 1
+( 38) Video: helicopter   Time: 63.2s Speed: 11.2fps Lost: 1
+( 39) Video: iceskater1   Time: 54.0s Speed: 12.2fps Lost: 0
+( 40) Video: iceskater2   Time: 59.4s Speed: 11.9fps Lost: 1
+( 41) Video: leaves       Time:  4.9s Speed: 12.6fps Lost: 3
+( 42) Video: matrix       Time:  8.5s Speed: 11.7fps Lost: 0
+( 43) Video: motocross1   Time: 13.4s Speed: 12.1fps Lost: 1
+( 44) Video: motocross2   Time:  6.4s Speed: 9.4fps Lost: 0
+( 45) Video: nature       Time: 90.4s Speed: 11.0fps Lost: 2
+( 46) Video: pedestrian1  Time: 12.2s Speed: 11.4fps Lost: 0
+( 47) Video: rabbit       Time: 13.1s Speed: 12.0fps Lost: 3
+( 48) Video: racing       Time: 14.3s Speed: 10.8fps Lost: 0
+( 49) Video: road         Time: 56.1s Speed: 9.9fps Lost: 3
+( 50) Video: shaking      Time: 32.5s Speed: 11.2fps Lost: 0
+( 51) Video: sheep        Time: 22.0s Speed: 11.4fps Lost: 0
+( 52) Video: singer2      Time: 33.5s Speed: 10.9fps Lost: 0
+( 53) Video: singer3      Time: 12.4s Speed: 10.5fps Lost: 0
+( 54) Video: soccer1      Time: 33.8s Speed: 11.6fps Lost: 4
+( 55) Video: soccer2      Time: 13.3s Speed: 9.6fps Lost: 0
+( 56) Video: soldier      Time: 14.5s Speed: 9.5fps Lost: 1
+( 57) Video: tiger        Time: 33.9s Speed: 10.7fps Lost: 0
+( 58) Video: traffic      Time: 20.2s Speed: 9.4fps Lost: 0
+( 59) Video: wiper        Time: 30.3s Speed: 11.2fps Lost: 2
+( 60) Video: zebrafish1   Time: 55.0s Speed: 7.2fps Lost: 1
+model total lost: 64
+
+Process finished with exit code 0
+/home/ubuntu/anaconda3/envs/pytorch/bin/python /home/ubuntu/Desktop/Object_Track/SiamTrackers/tools/eval.py
+loading VOT2018: 100%|██████████████████████████████████| 60/60 [00:02<00:00, 21.34it/s, zebrafish1]
+eval ar: 100%|████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.98it/s]
+eval eao: 100%|███████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.38it/s]
+------------------------------------------------------------
+|Tracker Name| Accuracy | Robustness | Lost Number |  EAO  |
+------------------------------------------------------------
+|   model    |  0.606   |   0.300    |    64.0     | 0.375 |
+------------------------------------------------------------
+
+Process finished with exit code 0
+
+判断是否使用光流法更新搜索区域重新匹配 threshold = 0.7
+/home/ubuntu/anaconda3/envs/pytorch/bin/python /home/ubuntu/Desktop/Object_Track/SiamTrackers/tools/test.py
+loading VOT2018: 100%|██████████████████████████████████| 60/60 [00:01<00:00, 35.19it/s, zebrafish1]
+(  1) Video: ants1        Time: 26.8s Speed: 12.1fps Lost: 0
+(  2) Video: ants3        Time: 47.2s Speed: 12.2fps Lost: 2
+(  3) Video: bag          Time: 15.7s Speed: 12.5fps Lost: 0
+(  4) Video: ball1        Time:  8.1s Speed: 12.9fps Lost: 0
+(  5) Video: ball2        Time:  3.4s Speed: 11.7fps Lost: 0
+(  6) Video: basketball   Time: 57.8s Speed: 12.5fps Lost: 1
+(  7) Video: birds1       Time: 26.9s Speed: 12.6fps Lost: 1
+(  8) Video: blanket      Time: 22.0s Speed: 10.2fps Lost: 1
+(  9) Video: bmx          Time:  6.2s Speed: 12.1fps Lost: 0
+( 10) Video: bolt1        Time: 27.4s Speed: 12.8fps Lost: 0
+( 11) Video: bolt2        Time: 22.8s Speed: 12.8fps Lost: 2
+( 12) Video: book         Time: 18.9s Speed: 9.2fps Lost: 1
+( 13) Video: butterfly    Time: 17.8s Speed: 8.4fps Lost: 0
+( 14) Video: car1         Time: 60.1s Speed: 12.3fps Lost: 0
+( 15) Video: conduction1  Time: 27.1s Speed: 12.7fps Lost: 2
+( 16) Video: crabs1       Time: 11.4s Speed: 13.9fps Lost: 3
+( 17) Video: crossing     Time: 10.5s Speed: 12.4fps Lost: 0
+( 18) Video: dinosaur     Time: 27.1s Speed: 12.0fps Lost: 2
+( 19) Video: drone1       Time: 27.5s Speed: 12.9fps Lost: 2
+( 20) Video: drone_across Time: 11.5s Speed: 12.7fps Lost: 0
+( 21) Video: drone_flip   Time:  8.1s Speed: 13.8fps Lost: 2
+( 22) Video: fernando     Time: 24.4s Speed: 11.9fps Lost: 1
+( 23) Video: fish1        Time: 29.6s Speed: 12.3fps Lost: 1
+( 24) Video: fish2        Time: 23.9s Speed: 12.9fps Lost: 3
+( 25) Video: fish3        Time: 41.7s Speed: 12.4fps Lost: 0
+( 26) Video: flamingo1    Time: 108.2s Speed: 12.7fps Lost: 2
+( 27) Video: frisbee      Time: 25.5s Speed: 9.7fps Lost: 2
+( 28) Video: girl         Time: 120.4s Speed: 12.4fps Lost: 3
+( 29) Video: glove        Time:  9.9s Speed: 12.0fps Lost: 1
+( 30) Video: godfather    Time: 29.3s Speed: 12.5fps Lost: 1
+( 31) Video: graduate     Time: 68.4s Speed: 12.3fps Lost: 0
+( 32) Video: gymnastics1  Time: 45.9s Speed: 12.3fps Lost: 0
+( 33) Video: gymnastics2  Time: 19.2s Speed: 12.5fps Lost: 0
+( 34) Video: gymnastics3  Time: 12.5s Speed: 9.4fps Lost: 1
+( 35) Video: hand         Time: 24.3s Speed: 10.9fps Lost: 2
+( 36) Video: handball1    Time: 29.6s Speed: 12.7fps Lost: 2
+( 37) Video: handball2    Time: 30.9s Speed: 13.0fps Lost: 3
+( 38) Video: helicopter   Time: 57.3s Speed: 12.3fps Lost: 0
+( 39) Video: iceskater1   Time: 54.6s Speed: 12.1fps Lost: 0
+( 40) Video: iceskater2   Time: 58.7s Speed: 12.0fps Lost: 1
+( 41) Video: leaves       Time:  5.0s Speed: 12.5fps Lost: 1
+( 42) Video: matrix       Time:  8.1s Speed: 12.2fps Lost: 0
+( 43) Video: motocross1   Time: 13.1s Speed: 12.5fps Lost: 1
+( 44) Video: motocross2   Time:  4.9s Speed: 12.2fps Lost: 0
+( 45) Video: nature       Time: 80.7s Speed: 12.4fps Lost: 3
+( 46) Video: pedestrian1  Time: 10.7s Speed: 13.0fps Lost: 0
+( 47) Video: rabbit       Time: 11.6s Speed: 13.5fps Lost: 4
+( 48) Video: racing       Time: 12.4s Speed: 12.5fps Lost: 0
+( 49) Video: road         Time: 43.7s Speed: 12.8fps Lost: 1
+( 50) Video: shaking      Time: 30.0s Speed: 12.1fps Lost: 0
+( 51) Video: sheep        Time: 19.8s Speed: 12.6fps Lost: 0
+( 52) Video: singer2      Time: 29.4s Speed: 12.4fps Lost: 0
+( 53) Video: singer3      Time: 11.6s Speed: 11.2fps Lost: 0
+( 54) Video: soccer1      Time: 30.9s Speed: 12.7fps Lost: 5
+( 55) Video: soccer2      Time:  9.9s Speed: 12.9fps Lost: 1
+( 56) Video: soldier      Time: 10.6s Speed: 13.0fps Lost: 1
+( 57) Video: tiger        Time: 29.3s Speed: 12.4fps Lost: 0
+( 58) Video: traffic      Time: 15.1s Speed: 12.6fps Lost: 0
+( 59) Video: wiper        Time: 26.7s Speed: 12.7fps Lost: 1
+( 60) Video: zebrafish1   Time: 32.0s Speed: 12.4fps Lost: 0
+model total lost: 60
+
+Process finished with exit code 0
+
+判断是否使用光流法更新搜索区域重新匹配 threshold = 0.6
+/home/ubuntu/anaconda3/envs/pytorch/bin/python /home/ubuntu/Desktop/Object_Track/SiamTrackers/tools/test.py
+loading VOT2018: 100%|█████████████████████████████████| 60/60 [00:00<00:00, 100.93it/s, zebrafish1]
+(  1) Video: ants1        Time: 25.5s Speed: 12.7fps Lost: 0
+(  2) Video: ants3        Time: 46.4s Speed: 12.5fps Lost: 1
+(  3) Video: bag          Time: 15.6s Speed: 12.5fps Lost: 0
+(  4) Video: ball1        Time:  8.3s Speed: 12.5fps Lost: 0
+(  5) Video: ball2        Time:  3.0s Speed: 13.5fps Lost: 0
+(  6) Video: basketball   Time: 57.9s Speed: 12.5fps Lost: 1
+(  7) Video: birds1       Time: 27.0s Speed: 12.5fps Lost: 1
+(  8) Video: blanket      Time: 20.1s Speed: 11.1fps Lost: 1
+(  9) Video: bmx          Time:  5.8s Speed: 12.9fps Lost: 0
+( 10) Video: bolt1        Time: 27.6s Speed: 12.7fps Lost: 0
+( 11) Video: bolt2        Time: 22.7s Speed: 12.9fps Lost: 2
+( 12) Video: book         Time: 19.8s Speed: 8.8fps Lost: 1
+( 13) Video: butterfly    Time: 16.9s Speed: 8.9fps Lost: 0
+( 14) Video: car1         Time: 59.8s Speed: 12.4fps Lost: 0
+( 15) Video: conduction1  Time: 26.9s Speed: 12.8fps Lost: 2
+( 16) Video: crabs1       Time: 11.4s Speed: 14.0fps Lost: 3
+( 17) Video: crossing     Time: 10.2s Speed: 12.7fps Lost: 0
+( 18) Video: dinosaur     Time: 26.2s Speed: 12.4fps Lost: 2
+( 19) Video: drone1       Time: 27.3s Speed: 13.0fps Lost: 2
+( 20) Video: drone_across Time: 11.5s Speed: 12.7fps Lost: 0
+( 21) Video: drone_flip   Time:  8.1s Speed: 13.9fps Lost: 2
+( 22) Video: fernando     Time: 24.5s Speed: 11.9fps Lost: 1
+( 23) Video: fish1        Time: 29.2s Speed: 12.5fps Lost: 1
+( 24) Video: fish2        Time: 24.0s Speed: 12.9fps Lost: 1
+( 25) Video: fish3        Time: 41.5s Speed: 12.5fps Lost: 0
+( 26) Video: flamingo1    Time: 107.2s Speed: 12.8fps Lost: 2
+( 27) Video: frisbee      Time: 22.0s Speed: 11.2fps Lost: 2
+( 28) Video: girl         Time: 130.4s Speed: 11.5fps Lost: 0
+( 29) Video: glove        Time: 10.4s Speed: 11.4fps Lost: 1
+( 30) Video: godfather    Time: 31.6s Speed: 11.6fps Lost: 1
+( 31) Video: graduate     Time: 73.2s Speed: 11.5fps Lost: 0
+( 32) Video: gymnastics1  Time: 50.7s Speed: 11.2fps Lost: 0
+( 33) Video: gymnastics2  Time: 20.4s Speed: 11.7fps Lost: 0
+( 34) Video: gymnastics3  Time: 11.3s Speed: 10.4fps Lost: 2
+( 35) Video: hand         Time: 25.1s Speed: 10.6fps Lost: 2
+( 36) Video: handball1    Time: 32.1s Speed: 11.7fps Lost: 2
+( 37) Video: handball2    Time: 33.2s Speed: 12.1fps Lost: 3
+( 38) Video: helicopter   Time: 60.8s Speed: 11.6fps Lost: 1
+( 39) Video: iceskater1   Time: 58.0s Speed: 11.4fps Lost: 0
+( 40) Video: iceskater2   Time: 62.9s Speed: 11.2fps Lost: 1
+( 41) Video: leaves       Time:  4.8s Speed: 13.0fps Lost: 2
+( 42) Video: matrix       Time:  8.6s Speed: 11.4fps Lost: 0
+( 43) Video: motocross1   Time: 14.0s Speed: 11.7fps Lost: 1
+( 44) Video: motocross2   Time:  5.2s Speed: 11.6fps Lost: 0
+( 45) Video: nature       Time: 86.1s Speed: 11.6fps Lost: 2
+( 46) Video: pedestrian1  Time: 12.1s Speed: 11.5fps Lost: 0
+( 47) Video: rabbit       Time: 12.7s Speed: 12.4fps Lost: 3
+( 48) Video: racing       Time: 13.5s Speed: 11.5fps Lost: 0
+( 49) Video: road         Time: 46.8s Speed: 11.9fps Lost: 1
+( 50) Video: shaking      Time: 31.9s Speed: 11.4fps Lost: 0
+( 51) Video: sheep        Time: 21.9s Speed: 11.4fps Lost: 0
+( 52) Video: singer2      Time: 31.8s Speed: 11.5fps Lost: 0
+( 53) Video: singer3      Time: 12.2s Speed: 10.7fps Lost: 0
+( 54) Video: soccer1      Time: 33.7s Speed: 11.6fps Lost: 3
+( 55) Video: soccer2      Time: 10.5s Speed: 12.2fps Lost: 1
+( 56) Video: soldier      Time: 11.2s Speed: 12.2fps Lost: 1
+( 57) Video: tiger        Time: 31.6s Speed: 11.5fps Lost: 0
+( 58) Video: traffic      Time: 16.1s Speed: 11.8fps Lost: 0
+( 59) Video: wiper        Time: 29.2s Speed: 11.6fps Lost: 1
+( 60) Video: zebrafish1   Time: 34.3s Speed: 11.6fps Lost: 0
+model total lost: 53
+
+Process finished with exit code 0
+
+判断是否使用光流法更新搜索区域重新匹配 threshold = 0.5
+/home/ubuntu/anaconda3/envs/pytorch/bin/python /home/ubuntu/Desktop/Object_Track/SiamTrackers/tools/test.py
+loading VOT2018: 100%|██████████████████████████████████| 60/60 [00:01<00:00, 40.65it/s, zebrafish1]
+(  1) Video: ants1        Time: 25.4s Speed: 12.7fps Lost: 0
+(  2) Video: ants3        Time: 46.2s Speed: 12.5fps Lost: 1
+(  3) Video: bag          Time: 15.6s Speed: 12.5fps Lost: 0
+(  4) Video: ball1        Time:  8.0s Speed: 13.1fps Lost: 0
+(  5) Video: ball2        Time:  3.3s Speed: 12.1fps Lost: 0
+(  6) Video: basketball   Time: 57.6s Speed: 12.6fps Lost: 1
+(  7) Video: birds1       Time: 26.8s Speed: 12.6fps Lost: 1
+(  8) Video: blanket      Time: 17.8s Speed: 12.6fps Lost: 1
+(  9) Video: bmx          Time:  6.1s Speed: 12.2fps Lost: 0
+( 10) Video: bolt1        Time: 27.7s Speed: 12.6fps Lost: 0
+( 11) Video: bolt2        Time: 22.6s Speed: 12.9fps Lost: 1
+( 12) Video: book         Time: 19.3s Speed: 9.0fps Lost: 1
+( 13) Video: butterfly    Time: 16.2s Speed: 9.3fps Lost: 0
+( 14) Video: car1         Time: 59.7s Speed: 12.4fps Lost: 0
+( 15) Video: conduction1  Time: 26.9s Speed: 12.8fps Lost: 0
+( 16) Video: crabs1       Time: 11.4s Speed: 14.0fps Lost: 3
+( 17) Video: crossing     Time: 10.6s Speed: 12.2fps Lost: 0
+( 18) Video: dinosaur     Time: 25.6s Speed: 12.7fps Lost: 2
+( 19) Video: drone1       Time: 26.7s Speed: 13.3fps Lost: 3
+( 20) Video: drone_across Time: 11.7s Speed: 12.5fps Lost: 0
+( 21) Video: drone_flip   Time:  7.8s Speed: 14.3fps Lost: 2
+( 22) Video: fernando     Time: 24.1s Speed: 12.1fps Lost: 1
+( 23) Video: fish1        Time: 29.1s Speed: 12.5fps Lost: 1
+( 24) Video: fish2        Time: 24.1s Speed: 12.8fps Lost: 1
+( 25) Video: fish3        Time: 41.5s Speed: 12.5fps Lost: 0
+( 26) Video: flamingo1    Time: 107.7s Speed: 12.8fps Lost: 2
+( 27) Video: frisbee      Time: 20.5s Speed: 12.1fps Lost: 2
+( 28) Video: girl         Time: 120.6s Speed: 12.4fps Lost: 0
+( 29) Video: glove        Time:  9.7s Speed: 12.3fps Lost: 1
+( 30) Video: godfather    Time: 29.1s Speed: 12.5fps Lost: 1
+( 31) Video: graduate     Time: 67.5s Speed: 12.5fps Lost: 0
+( 32) Video: gymnastics1  Time: 45.6s Speed: 12.4fps Lost: 0
+( 33) Video: gymnastics2  Time: 19.1s Speed: 12.5fps Lost: 0
+( 34) Video: gymnastics3  Time: 10.5s Speed: 11.1fps Lost: 1
+( 35) Video: hand         Time: 22.3s Speed: 11.9fps Lost: 2
+( 36) Video: handball1    Time: 29.0s Speed: 13.0fps Lost: 2
+( 37) Video: handball2    Time: 30.7s Speed: 13.0fps Lost: 3
+( 38) Video: helicopter   Time: 56.6s Speed: 12.5fps Lost: 1
+( 39) Video: iceskater1   Time: 53.1s Speed: 12.4fps Lost: 0
+( 40) Video: iceskater2   Time: 57.4s Speed: 12.3fps Lost: 1
+( 41) Video: leaves       Time:  4.6s Speed: 13.4fps Lost: 2
+( 42) Video: matrix       Time:  8.1s Speed: 12.2fps Lost: 0
+( 43) Video: motocross1   Time: 12.9s Speed: 12.7fps Lost: 1
+( 44) Video: motocross2   Time:  4.8s Speed: 12.6fps Lost: 0
+( 45) Video: nature       Time: 79.5s Speed: 12.6fps Lost: 3
+( 46) Video: pedestrian1  Time: 10.8s Speed: 12.8fps Lost: 0
+( 47) Video: rabbit       Time: 11.6s Speed: 13.5fps Lost: 3
+( 48) Video: racing       Time: 13.2s Speed: 11.8fps Lost: 0
+( 49) Video: road         Time: 44.0s Speed: 12.7fps Lost: 1
+( 50) Video: shaking      Time: 29.4s Speed: 12.4fps Lost: 0
+( 51) Video: sheep        Time: 20.4s Speed: 12.2fps Lost: 0
+( 52) Video: singer2      Time: 29.3s Speed: 12.4fps Lost: 0
+( 53) Video: singer3      Time: 11.2s Speed: 11.7fps Lost: 0
+( 54) Video: soccer1      Time: 30.8s Speed: 12.7fps Lost: 3
+( 55) Video: soccer2      Time:  9.9s Speed: 13.0fps Lost: 1
+( 56) Video: soldier      Time: 10.6s Speed: 13.0fps Lost: 1
+( 57) Video: tiger        Time: 29.5s Speed: 12.4fps Lost: 0
+( 58) Video: traffic      Time: 15.2s Speed: 12.5fps Lost: 0
+( 59) Video: wiper        Time: 26.4s Speed: 12.9fps Lost: 1
+( 60) Video: zebrafish1   Time: 32.0s Speed: 12.5fps Lost: 0
+model total lost: 51
+
+Process finished with exit code 0
+
+判断是否使用光流法更新搜索区域重新匹配 threshold = 0.4
+/home/ubuntu/anaconda3/envs/pytorch/bin/python /home/ubuntu/Desktop/Object_Track/SiamTrackers/tools/test.py
+loading VOT2018: 100%|██████████████████████████████████| 60/60 [00:00<00:00, 97.99it/s, zebrafish1]
+(  1) Video: ants1        Time: 25.3s Speed: 12.8fps Lost: 0
+(  2) Video: ants3        Time: 45.3s Speed: 12.8fps Lost: 1
+(  3) Video: bag          Time: 15.9s Speed: 12.3fps Lost: 0
+(  4) Video: ball1        Time:  8.3s Speed: 12.5fps Lost: 0
+(  5) Video: ball2        Time:  2.9s Speed: 13.9fps Lost: 0
+(  6) Video: basketball   Time: 57.8s Speed: 12.5fps Lost: 1
+(  7) Video: birds1       Time: 26.9s Speed: 12.6fps Lost: 1
+(  8) Video: blanket      Time: 17.6s Speed: 12.7fps Lost: 1
+(  9) Video: bmx          Time:  5.9s Speed: 12.7fps Lost: 0
+( 10) Video: bolt1        Time: 27.6s Speed: 12.6fps Lost: 0
+( 11) Video: bolt2        Time: 23.2s Speed: 12.6fps Lost: 1
+( 12) Video: book         Time: 18.1s Speed: 9.6fps Lost: 1
+( 13) Video: butterfly    Time: 16.2s Speed: 9.2fps Lost: 0
+( 14) Video: car1         Time: 59.7s Speed: 12.4fps Lost: 0
+( 15) Video: conduction1  Time: 26.6s Speed: 12.9fps Lost: 0
+( 16) Video: crabs1       Time: 11.4s Speed: 13.9fps Lost: 3
+( 17) Video: crossing     Time: 10.3s Speed: 12.6fps Lost: 0
+( 18) Video: dinosaur     Time: 25.8s Speed: 12.6fps Lost: 2
+( 19) Video: drone1       Time: 27.1s Speed: 13.1fps Lost: 3
+( 20) Video: drone_across Time: 11.4s Speed: 12.8fps Lost: 0
+( 21) Video: drone_flip   Time:  8.2s Speed: 13.6fps Lost: 2
+( 22) Video: fernando     Time: 23.8s Speed: 12.2fps Lost: 1
+( 23) Video: fish1        Time: 29.4s Speed: 12.4fps Lost: 1
+( 24) Video: fish2        Time: 24.5s Speed: 12.6fps Lost: 1
+( 25) Video: fish3        Time: 41.4s Speed: 12.5fps Lost: 0
+( 26) Video: flamingo1    Time: 107.5s Speed: 12.8fps Lost: 2
+( 27) Video: frisbee      Time: 20.8s Speed: 11.9fps Lost: 3
+( 28) Video: girl         Time: 120.8s Speed: 12.4fps Lost: 2
+( 29) Video: glove        Time:  9.3s Speed: 12.8fps Lost: 1
+( 30) Video: godfather    Time: 29.0s Speed: 12.6fps Lost: 1
+( 31) Video: graduate     Time: 67.6s Speed: 12.5fps Lost: 0
+( 32) Video: gymnastics1  Time: 45.5s Speed: 12.4fps Lost: 0
+( 33) Video: gymnastics2  Time: 19.1s Speed: 12.5fps Lost: 0
+( 34) Video: gymnastics3  Time:  9.2s Speed: 12.8fps Lost: 2
+( 35) Video: hand         Time: 22.3s Speed: 11.9fps Lost: 1
+( 36) Video: handball1    Time: 29.5s Speed: 12.8fps Lost: 2
+( 37) Video: handball2    Time: 30.6s Speed: 13.1fps Lost: 3
+( 38) Video: helicopter   Time: 56.5s Speed: 12.5fps Lost: 1
+( 39) Video: iceskater1   Time: 53.5s Speed: 12.3fps Lost: 0
+( 40) Video: iceskater2   Time: 56.5s Speed: 12.5fps Lost: 1
+( 41) Video: leaves       Time:  4.7s Speed: 13.1fps Lost: 2
+( 42) Video: matrix       Time:  7.8s Speed: 12.7fps Lost: 0
+( 43) Video: motocross1   Time: 13.0s Speed: 12.5fps Lost: 1
+( 44) Video: motocross2   Time:  4.9s Speed: 12.2fps Lost: 0
+( 45) Video: nature       Time: 79.5s Speed: 12.6fps Lost: 3
+( 46) Video: pedestrian1  Time: 10.7s Speed: 12.9fps Lost: 0
+( 47) Video: rabbit       Time: 11.7s Speed: 13.4fps Lost: 3
+( 48) Video: racing       Time: 12.6s Speed: 12.3fps Lost: 0
+( 49) Video: road         Time: 43.5s Speed: 12.8fps Lost: 1
+( 50) Video: shaking      Time: 29.5s Speed: 12.3fps Lost: 0
+( 51) Video: sheep        Time: 19.9s Speed: 12.5fps Lost: 0
+( 52) Video: singer2      Time: 29.4s Speed: 12.4fps Lost: 0
+( 53) Video: singer3      Time: 10.3s Speed: 12.7fps Lost: 0
+( 54) Video: soccer1      Time: 30.7s Speed: 12.7fps Lost: 3
+( 55) Video: soccer2      Time:  9.9s Speed: 12.9fps Lost: 1
+( 56) Video: soldier      Time: 10.5s Speed: 13.0fps Lost: 1
+( 57) Video: tiger        Time: 29.0s Speed: 12.5fps Lost: 0
+( 58) Video: traffic      Time: 15.0s Speed: 12.6fps Lost: 0
+( 59) Video: wiper        Time: 26.6s Speed: 12.8fps Lost: 1
+( 60) Video: zebrafish1   Time: 31.8s Speed: 12.5fps Lost: 0
+model total lost: 54
+
+Process finished with exit code 0
+
+判断是否使用光流法更新搜索区域重新匹配 threshold = 0.3
+/home/ubuntu/anaconda3/envs/pytorch/bin/python /home/ubuntu/Desktop/Object_Track/SiamTrackers/tools/test.py
+loading VOT2018: 100%|██████████████████████████████████| 60/60 [00:00<00:00, 95.63it/s, zebrafish1]
+(  1) Video: ants1        Time: 25.5s Speed: 12.7fps Lost: 0
+(  2) Video: ants3        Time: 45.4s Speed: 12.7fps Lost: 2
+(  3) Video: bag          Time: 15.9s Speed: 12.3fps Lost: 0
+(  4) Video: ball1        Time:  8.1s Speed: 12.8fps Lost: 0
+(  5) Video: ball2        Time:  3.1s Speed: 12.7fps Lost: 0
+(  6) Video: basketball   Time: 57.4s Speed: 12.6fps Lost: 1
+(  7) Video: birds1       Time: 26.9s Speed: 12.5fps Lost: 1
+(  8) Video: blanket      Time: 17.2s Speed: 13.0fps Lost: 1
+(  9) Video: bmx          Time:  6.1s Speed: 12.3fps Lost: 0
+( 10) Video: bolt1        Time: 27.5s Speed: 12.7fps Lost: 0
+( 11) Video: bolt2        Time: 23.0s Speed: 12.7fps Lost: 1
+( 12) Video: book         Time: 17.9s Speed: 9.7fps Lost: 1
+( 13) Video: butterfly    Time: 15.6s Speed: 9.6fps Lost: 0
+( 14) Video: car1         Time: 59.0s Speed: 12.6fps Lost: 0
+( 15) Video: conduction1  Time: 26.8s Speed: 12.8fps Lost: 0
+( 16) Video: crabs1       Time: 11.6s Speed: 13.7fps Lost: 3
+( 17) Video: crossing     Time: 10.6s Speed: 12.3fps Lost: 0
+( 18) Video: dinosaur     Time: 25.7s Speed: 12.7fps Lost: 2
+( 19) Video: drone1       Time: 26.9s Speed: 13.1fps Lost: 3
+( 20) Video: drone_across Time: 11.5s Speed: 12.7fps Lost: 0
+( 21) Video: drone_flip   Time:  8.1s Speed: 13.8fps Lost: 2
+( 22) Video: fernando     Time: 22.8s Speed: 12.8fps Lost: 2
+( 23) Video: fish1        Time: 29.0s Speed: 12.6fps Lost: 1
+( 24) Video: fish2        Time: 24.4s Speed: 12.7fps Lost: 1
+( 25) Video: fish3        Time: 41.6s Speed: 12.5fps Lost: 0
+( 26) Video: flamingo1    Time: 107.5s Speed: 12.8fps Lost: 2
+( 27) Video: frisbee      Time: 19.8s Speed: 12.4fps Lost: 2
+( 28) Video: girl         Time: 120.9s Speed: 12.4fps Lost: 2
+( 29) Video: glove        Time:  9.3s Speed: 12.8fps Lost: 1
+( 30) Video: godfather    Time: 29.1s Speed: 12.5fps Lost: 1
+( 31) Video: graduate     Time: 67.8s Speed: 12.4fps Lost: 0
+( 32) Video: gymnastics1  Time: 47.3s Speed: 12.0fps Lost: 0
+( 33) Video: gymnastics2  Time: 18.8s Speed: 12.7fps Lost: 0
+( 34) Video: gymnastics3  Time:  8.7s Speed: 13.5fps Lost: 1
+( 35) Video: hand         Time: 20.9s Speed: 12.7fps Lost: 2
+( 36) Video: handball1    Time: 29.8s Speed: 12.6fps Lost: 2
+( 37) Video: handball2    Time: 31.0s Speed: 12.9fps Lost: 3
+( 38) Video: helicopter   Time: 56.3s Speed: 12.6fps Lost: 1
+( 39) Video: iceskater1   Time: 53.7s Speed: 12.3fps Lost: 0
+( 40) Video: iceskater2   Time: 56.9s Speed: 12.4fps Lost: 1
+( 41) Video: leaves       Time:  4.4s Speed: 14.3fps Lost: 2
+( 42) Video: matrix       Time:  8.0s Speed: 12.4fps Lost: 0
+( 43) Video: motocross1   Time: 12.6s Speed: 12.9fps Lost: 1
+( 44) Video: motocross2   Time:  5.1s Speed: 11.8fps Lost: 0
+( 45) Video: nature       Time: 80.3s Speed: 12.4fps Lost: 3
+( 46) Video: pedestrian1  Time: 11.3s Speed: 12.4fps Lost: 0
+( 47) Video: rabbit       Time: 11.4s Speed: 13.8fps Lost: 3
+( 48) Video: racing       Time: 12.7s Speed: 12.2fps Lost: 0
+( 49) Video: road         Time: 44.0s Speed: 12.7fps Lost: 1
+( 50) Video: shaking      Time: 29.5s Speed: 12.3fps Lost: 0
+( 51) Video: sheep        Time: 20.2s Speed: 12.4fps Lost: 0
+( 52) Video: singer2      Time: 29.8s Speed: 12.2fps Lost: 0
+( 53) Video: singer3      Time: 10.5s Speed: 12.4fps Lost: 0
+( 54) Video: soccer1      Time: 31.3s Speed: 12.5fps Lost: 3
+( 55) Video: soccer2      Time: 10.0s Speed: 12.8fps Lost: 1
+( 56) Video: soldier      Time: 10.5s Speed: 13.1fps Lost: 1
+( 57) Video: tiger        Time: 28.9s Speed: 12.6fps Lost: 0
+( 58) Video: traffic      Time: 15.3s Speed: 12.4fps Lost: 0
+( 59) Video: wiper        Time: 27.2s Speed: 12.5fps Lost: 1
+( 60) Video: zebrafish1   Time: 32.6s Speed: 12.2fps Lost: 0
+model total lost: 55
+
+Process finished with exit code 0
+
+判断是否使用光流法更新搜索区域重新匹配 threshold = 0.8
+/home/ubuntu/anaconda3/envs/pytorch/bin/python /home/ubuntu/Desktop/Object_Track/SiamTrackers/tools/test.py
+loading VOT2018: 100%|██████████████████████████████████| 60/60 [00:01<00:00, 40.76it/s, zebrafish1]
+(  1) Video: ants1        Time: 28.8s Speed: 11.2fps Lost: 1
+(  2) Video: ants3        Time: 50.1s Speed: 11.5fps Lost: 2
+(  3) Video: bag          Time: 15.6s Speed: 12.5fps Lost: 0
+(  4) Video: ball1        Time:  8.4s Speed: 12.4fps Lost: 0
+(  5) Video: ball2        Time:  3.2s Speed: 12.6fps Lost: 0
+(  6) Video: basketball   Time: 57.4s Speed: 12.6fps Lost: 1
+(  7) Video: birds1       Time: 26.7s Speed: 12.7fps Lost: 1
+(  8) Video: blanket      Time: 24.6s Speed: 9.1fps Lost: 1
+(  9) Video: bmx          Time:  7.5s Speed: 10.0fps Lost: 0
+( 10) Video: bolt1        Time: 27.4s Speed: 12.7fps Lost: 0
+( 11) Video: bolt2        Time: 21.9s Speed: 13.3fps Lost: 2
+( 12) Video: book         Time: 21.2s Speed: 8.2fps Lost: 1
+( 13) Video: butterfly    Time: 18.9s Speed: 7.9fps Lost: 0
+( 14) Video: car1         Time: 60.2s Speed: 12.3fps Lost: 0
+( 15) Video: conduction1  Time: 28.5s Speed: 12.1fps Lost: 2
+( 16) Video: crabs1       Time: 11.5s Speed: 13.8fps Lost: 3
+( 17) Video: crossing     Time: 10.4s Speed: 12.5fps Lost: 0
+( 18) Video: dinosaur     Time: 28.4s Speed: 11.5fps Lost: 1
+( 19) Video: drone1       Time: 27.0s Speed: 13.1fps Lost: 3
+( 20) Video: drone_across Time: 12.1s Speed: 12.0fps Lost: 0
+( 21) Video: drone_flip   Time:  8.4s Speed: 13.3fps Lost: 2
+( 22) Video: fernando     Time: 24.2s Speed: 12.0fps Lost: 1
+( 23) Video: fish1        Time: 29.7s Speed: 12.3fps Lost: 1
+( 24) Video: fish2        Time: 23.7s Speed: 13.0fps Lost: 3
+( 25) Video: fish3        Time: 41.4s Speed: 12.5fps Lost: 0
+( 26) Video: flamingo1    Time: 107.8s Speed: 12.8fps Lost: 2
+( 27) Video: frisbee      Time: 24.7s Speed: 10.0fps Lost: 1
+( 28) Video: girl         Time: 120.3s Speed: 12.5fps Lost: 3
+( 29) Video: glove        Time:  9.7s Speed: 12.2fps Lost: 1
+( 30) Video: godfather    Time: 30.4s Speed: 12.0fps Lost: 1
+( 31) Video: graduate     Time: 68.7s Speed: 12.3fps Lost: 0
+( 32) Video: gymnastics1  Time: 46.9s Speed: 12.1fps Lost: 0
+( 33) Video: gymnastics2  Time: 19.8s Speed: 12.1fps Lost: 0
+( 34) Video: gymnastics3  Time: 13.7s Speed: 8.5fps Lost: 1
+( 35) Video: hand         Time: 27.1s Speed: 9.8fps Lost: 1
+( 36) Video: handball1    Time: 30.7s Speed: 12.3fps Lost: 0
+( 37) Video: handball2    Time: 31.1s Speed: 12.9fps Lost: 2
+( 38) Video: helicopter   Time: 56.5s Speed: 12.5fps Lost: 1
+( 39) Video: iceskater1   Time: 53.2s Speed: 12.4fps Lost: 0
+( 40) Video: iceskater2   Time: 60.1s Speed: 11.8fps Lost: 1
+( 41) Video: leaves       Time:  4.5s Speed: 13.8fps Lost: 2
+( 42) Video: matrix       Time:  8.5s Speed: 11.7fps Lost: 0
+( 43) Video: motocross1   Time: 13.5s Speed: 12.1fps Lost: 1
+( 44) Video: motocross2   Time:  4.8s Speed: 12.5fps Lost: 0
+( 45) Video: nature       Time: 80.9s Speed: 12.3fps Lost: 3
+( 46) Video: pedestrian1  Time: 10.8s Speed: 12.8fps Lost: 0
+( 47) Video: rabbit       Time: 13.2s Speed: 11.9fps Lost: 3
+( 48) Video: racing       Time: 12.3s Speed: 12.6fps Lost: 0
+( 49) Video: road         Time: 43.2s Speed: 12.9fps Lost: 2
+( 50) Video: shaking      Time: 30.2s Speed: 12.1fps Lost: 0
+( 51) Video: sheep        Time: 19.9s Speed: 12.6fps Lost: 0
+( 52) Video: singer2      Time: 29.6s Speed: 12.3fps Lost: 0
+( 53) Video: singer3      Time: 11.4s Speed: 11.4fps Lost: 0
+( 54) Video: soccer1      Time: 32.3s Speed: 12.1fps Lost: 4
+( 55) Video: soccer2      Time: 10.3s Speed: 12.4fps Lost: 1
+( 56) Video: soldier      Time: 12.2s Speed: 11.2fps Lost: 1
+( 57) Video: tiger        Time: 29.9s Speed: 12.2fps Lost: 0
+( 58) Video: traffic      Time: 14.8s Speed: 12.8fps Lost: 0
+( 59) Video: wiper        Time: 26.8s Speed: 12.7fps Lost: 1
+( 60) Video: zebrafish1   Time: 32.3s Speed: 12.3fps Lost: 0
+model total lost: 57
+
+Process finished with exit code 0
+
+/home/ubuntu/anaconda3/envs/pytorch/bin/python /home/ubuntu/Desktop/Object_Track/SiamTrackers/tools/test.py
+loading VOT2018: 100%|██████████████████████████████████| 60/60 [00:00<00:00, 87.92it/s, zebrafish1]
+(  1) Video: ants1        Time: 29.4s Speed: 11.0fps Lost: 1
+(  2) Video: ants3        Time: 52.4s Speed: 11.0fps Lost: 1
+(  3) Video: bag          Time: 15.8s Speed: 12.3fps Lost: 0
+(  4) Video: ball1        Time:  8.0s Speed: 13.0fps Lost: 0
+(  5) Video: ball2        Time:  3.7s Speed: 10.9fps Lost: 0
+(  6) Video: basketball   Time: 57.3s Speed: 12.6fps Lost: 1
+(  7) Video: birds1       Time: 26.6s Speed: 12.7fps Lost: 1
+(  8) Video: blanket      Time: 25.0s Speed: 9.0fps Lost: 1
+(  9) Video: bmx          Time:  7.5s Speed: 10.0fps Lost: 0
+( 10) Video: bolt1        Time: 27.5s Speed: 12.7fps Lost: 0
+( 11) Video: bolt2        Time: 23.2s Speed: 12.6fps Lost: 2
+( 12) Video: book         Time: 22.8s Speed: 7.6fps Lost: 1
+( 13) Video: butterfly    Time: 18.5s Speed: 8.1fps Lost: 0
+( 14) Video: car1         Time: 60.5s Speed: 12.2fps Lost: 0
+( 15) Video: conduction1  Time: 28.1s Speed: 12.2fps Lost: 2
+( 16) Video: crabs1       Time: 11.8s Speed: 13.4fps Lost: 3
+( 17) Video: crossing     Time: 10.4s Speed: 12.6fps Lost: 0
+( 18) Video: dinosaur     Time: 30.0s Speed: 10.8fps Lost: 1
+( 19) Video: drone1       Time: 27.0s Speed: 13.1fps Lost: 3
+( 20) Video: drone_across Time: 12.2s Speed: 11.9fps Lost: 0
+( 21) Video: drone_flip   Time:  8.6s Speed: 13.0fps Lost: 2
+( 22) Video: fernando     Time: 24.2s Speed: 12.0fps Lost: 1
+( 23) Video: fish1        Time: 29.4s Speed: 12.4fps Lost: 2
+( 24) Video: fish2        Time: 24.0s Speed: 12.9fps Lost: 3
+( 25) Video: fish3        Time: 41.6s Speed: 12.5fps Lost: 0
+( 26) Video: flamingo1    Time: 108.6s Speed: 12.7fps Lost: 2
+( 27) Video: frisbee      Time: 26.1s Speed: 9.5fps Lost: 2
+( 28) Video: girl         Time: 127.7s Speed: 11.7fps Lost: 2
+( 29) Video: glove        Time: 10.2s Speed: 11.6fps Lost: 1
+( 30) Video: godfather    Time: 30.8s Speed: 11.9fps Lost: 1
+( 31) Video: graduate     Time: 69.9s Speed: 12.1fps Lost: 0
+( 32) Video: gymnastics1  Time: 47.7s Speed: 11.9fps Lost: 0
+( 33) Video: gymnastics2  Time: 20.6s Speed: 11.6fps Lost: 0
+( 34) Video: gymnastics3  Time: 12.8s Speed: 9.2fps Lost: 2
+( 35) Video: hand         Time: 26.6s Speed: 10.0fps Lost: 2
+( 36) Video: handball1    Time: 31.0s Speed: 12.1fps Lost: 0
+( 37) Video: handball2    Time: 31.3s Speed: 12.8fps Lost: 3
+( 38) Video: helicopter   Time: 57.6s Speed: 12.3fps Lost: 1
+( 39) Video: iceskater1   Time: 54.2s Speed: 12.2fps Lost: 0
+( 40) Video: iceskater2   Time: 61.4s Speed: 11.5fps Lost: 1
+( 41) Video: leaves       Time:  4.5s Speed: 13.6fps Lost: 2
+( 42) Video: matrix       Time:  8.4s Speed: 11.8fps Lost: 0
+( 43) Video: motocross1   Time: 13.5s Speed: 12.1fps Lost: 1
+( 44) Video: motocross2   Time:  4.9s Speed: 12.2fps Lost: 0
+( 45) Video: nature       Time: 81.1s Speed: 12.3fps Lost: 3
+( 46) Video: pedestrian1  Time: 11.4s Speed: 12.2fps Lost: 0
+( 47) Video: rabbit       Time: 13.2s Speed: 11.9fps Lost: 3
+( 48) Video: racing       Time: 12.6s Speed: 12.3fps Lost: 0
+( 49) Video: road         Time: 43.7s Speed: 12.7fps Lost: 2
+( 50) Video: shaking      Time: 30.9s Speed: 11.8fps Lost: 0
+( 51) Video: sheep        Time: 19.7s Speed: 12.7fps Lost: 0
+( 52) Video: singer2      Time: 29.3s Speed: 12.4fps Lost: 0
+( 53) Video: singer3      Time: 12.2s Speed: 10.7fps Lost: 0
+( 54) Video: soccer1      Time: 32.3s Speed: 12.1fps Lost: 5
+( 55) Video: soccer2      Time:  9.7s Speed: 13.1fps Lost: 1
+( 56) Video: soldier      Time: 13.5s Speed: 10.2fps Lost: 0
+( 57) Video: tiger        Time: 29.9s Speed: 12.2fps Lost: 0
+( 58) Video: traffic      Time: 14.9s Speed: 12.7fps Lost: 0
+( 59) Video: wiper        Time: 27.1s Speed: 12.5fps Lost: 1
+( 60) Video: zebrafish1   Time: 32.5s Speed: 12.3fps Lost: 0
+model total lost: 60
+
+Process finished with exit code 0
+
+
+Medianflow
+/home/ubuntu/anaconda3/envs/pytorch/bin/python /home/ubuntu/Desktop/Object_Track/SiamTrackers/tools/test.py
+loading VOT2018: 100%|██████████████████████████████████| 60/60 [00:00<00:00, 91.39it/s, zebrafish1]
+(  1) Video: ants1        Time: 17.5s Speed: 18.5fps Lost: 0
+(  2) Video: ants3        Time: 30.8s Speed: 18.8fps Lost: 2
+(  3) Video: bag          Time:  9.8s Speed: 19.8fps Lost: 0
+(  4) Video: ball1        Time:  5.5s Speed: 18.8fps Lost: 0
+(  5) Video: ball2        Time:  2.1s Speed: 19.4fps Lost: 0
+(  6) Video: basketball   Time: 34.7s Speed: 20.9fps Lost: 1
+(  7) Video: birds1       Time: 17.4s Speed: 19.4fps Lost: 0
+(  8) Video: blanket      Time: 10.5s Speed: 21.4fps Lost: 1
+(  9) Video: bmx          Time:  3.9s Speed: 19.2fps Lost: 0
+( 10) Video: bolt1        Time: 16.6s Speed: 21.0fps Lost: 1
+( 11) Video: bolt2        Time: 13.5s Speed: 21.6fps Lost: 2
+( 12) Video: book         Time:  8.3s Speed: 21.1fps Lost: 1
+( 13) Video: butterfly    Time:  7.4s Speed: 20.4fps Lost: 0
+( 14) Video: car1         Time: 36.3s Speed: 20.4fps Lost: 0
+( 15) Video: conduction1  Time: 17.0s Speed: 20.2fps Lost: 3
+( 16) Video: crabs1       Time:  8.0s Speed: 19.9fps Lost: 1
+( 17) Video: crossing     Time:  6.7s Speed: 19.4fps Lost: 0
+( 18) Video: dinosaur     Time: 15.4s Speed: 21.2fps Lost: 1
+( 19) Video: drone1       Time: 17.5s Speed: 20.2fps Lost: 3
+( 20) Video: drone_across Time:  7.5s Speed: 19.4fps Lost: 0
+( 21) Video: drone_flip   Time:  5.5s Speed: 20.2fps Lost: 1
+( 22) Video: fernando     Time: 14.2s Speed: 20.6fps Lost: 1
+( 23) Video: fish1        Time: 17.3s Speed: 21.1fps Lost: 1
+( 24) Video: fish2        Time: 14.5s Speed: 21.3fps Lost: 2
+( 25) Video: fish3        Time: 25.1s Speed: 20.7fps Lost: 0
+( 26) Video: flamingo1    Time: 70.3s Speed: 19.6fps Lost: 2
+( 27) Video: frisbee      Time: 13.8s Speed: 17.9fps Lost: 1
+( 28) Video: girl         Time: 72.8s Speed: 20.6fps Lost: 3
+( 29) Video: glove        Time:  5.4s Speed: 22.2fps Lost: 2
+( 30) Video: godfather    Time: 17.0s Speed: 21.5fps Lost: 2
+( 31) Video: graduate     Time: 40.7s Speed: 20.7fps Lost: 0
+( 32) Video: gymnastics1  Time: 27.0s Speed: 21.0fps Lost: 0
+( 33) Video: gymnastics2  Time: 12.2s Speed: 19.5fps Lost: 1
+( 34) Video: gymnastics3  Time:  5.7s Speed: 20.7fps Lost: 2
+( 35) Video: hand         Time: 12.3s Speed: 21.7fps Lost: 2
+( 36) Video: handball1    Time: 18.0s Speed: 20.9fps Lost: 0
+( 37) Video: handball2    Time: 19.4s Speed: 20.7fps Lost: 2
+( 38) Video: helicopter   Time: 34.9s Speed: 20.2fps Lost: 1
+( 39) Video: iceskater1   Time: 32.1s Speed: 20.6fps Lost: 0
+( 40) Video: iceskater2   Time: 34.4s Speed: 20.5fps Lost: 1
+( 41) Video: leaves       Time:  2.6s Speed: 23.9fps Lost: 3
+( 42) Video: matrix       Time:  4.8s Speed: 20.4fps Lost: 0
+( 43) Video: motocross1   Time:  7.7s Speed: 21.1fps Lost: 1
+( 44) Video: motocross2   Time:  3.2s Speed: 18.8fps Lost: 0
+( 45) Video: nature       Time: 49.8s Speed: 20.1fps Lost: 3
+( 46) Video: pedestrian1  Time:  6.7s Speed: 20.9fps Lost: 0
+( 47) Video: rabbit       Time:  7.0s Speed: 22.5fps Lost: 3
+( 48) Video: racing       Time:  7.6s Speed: 20.4fps Lost: 0
+( 49) Video: road         Time: 27.7s Speed: 20.1fps Lost: 3
+( 50) Video: shaking      Time: 17.7s Speed: 20.6fps Lost: 0
+( 51) Video: sheep        Time: 12.0s Speed: 20.8fps Lost: 0
+( 52) Video: singer2      Time: 18.0s Speed: 20.3fps Lost: 0
+( 53) Video: singer3      Time:  6.5s Speed: 20.1fps Lost: 0
+( 54) Video: soccer1      Time: 18.3s Speed: 21.4fps Lost: 3
+( 55) Video: soccer2      Time:  6.5s Speed: 19.5fps Lost: 0
+( 56) Video: soldier      Time:  7.1s Speed: 19.2fps Lost: 0
+( 57) Video: tiger        Time: 17.9s Speed: 20.4fps Lost: 0
+( 58) Video: traffic      Time:  9.7s Speed: 19.6fps Lost: 0
+( 59) Video: wiper        Time: 16.1s Speed: 21.1fps Lost: 2
+( 60) Video: zebrafish1   Time: 22.8s Speed: 17.5fps Lost: 0
+model total lost: 58
+
+Process finished with exit code 0
+
+/home/ubuntu/anaconda3/envs/pytorch/bin/python /home/ubuntu/Desktop/Object_Track/SiamTrackers/tools/test.py
+loading VOT2018: 100%|██████████████████████████████████| 60/60 [00:00<00:00, 93.24it/s, zebrafish1]
+(  1) Video: ants1        Time: 14.8s Speed: 21.9fps Lost: 0
+(  2) Video: ants3        Time: 26.3s Speed: 22.0fps Lost: 2
+(  3) Video: bag          Time:  9.1s Speed: 21.4fps Lost: 0
+(  4) Video: ball1        Time:  4.8s Speed: 21.6fps Lost: 0
+(  5) Video: ball2        Time:  1.9s Speed: 21.4fps Lost: 0
+(  6) Video: basketball   Time: 33.4s Speed: 21.7fps Lost: 1
+(  7) Video: birds1       Time: 15.7s Speed: 21.6fps Lost: 0
+(  8) Video: blanket      Time: 10.8s Speed: 20.7fps Lost: 1
+(  9) Video: bmx          Time:  3.5s Speed: 21.2fps Lost: 0
+( 10) Video: bolt1        Time: 16.2s Speed: 21.6fps Lost: 0
+( 11) Video: bolt2        Time: 13.4s Speed: 21.8fps Lost: 1
+( 12) Video: book         Time: 10.7s Speed: 16.3fps Lost: 1
+( 13) Video: butterfly    Time: 10.1s Speed: 14.9fps Lost: 0
+( 14) Video: car1         Time: 34.8s Speed: 21.3fps Lost: 0
+( 15) Video: conduction1  Time: 16.0s Speed: 21.5fps Lost: 0
+( 16) Video: crabs1       Time:  6.8s Speed: 23.4fps Lost: 3
+( 17) Video: crossing     Time:  6.2s Speed: 21.1fps Lost: 0
+( 18) Video: dinosaur     Time: 15.2s Speed: 21.4fps Lost: 2
+( 19) Video: drone1       Time: 16.1s Speed: 22.0fps Lost: 2
+( 20) Video: drone_across Time:  6.8s Speed: 21.4fps Lost: 0
+( 21) Video: drone_flip   Time:  4.8s Speed: 23.3fps Lost: 2
+( 22) Video: fernando     Time: 14.2s Speed: 20.5fps Lost: 1
+( 23) Video: fish1        Time: 16.7s Speed: 21.8fps Lost: 2
+( 24) Video: fish2        Time: 14.2s Speed: 21.8fps Lost: 1
+( 25) Video: fish3        Time: 24.2s Speed: 21.4fps Lost: 0
+( 26) Video: flamingo1    Time: 63.6s Speed: 21.7fps Lost: 2
+( 27) Video: frisbee      Time: 11.8s Speed: 21.0fps Lost: 2
+( 28) Video: girl         Time: 70.0s Speed: 21.4fps Lost: 2
+( 29) Video: glove        Time:  5.5s Speed: 21.6fps Lost: 1
+( 30) Video: godfather    Time: 16.9s Speed: 21.6fps Lost: 1
+( 31) Video: graduate     Time: 39.7s Speed: 21.2fps Lost: 0
+( 32) Video: gymnastics1  Time: 26.8s Speed: 21.2fps Lost: 0
+( 33) Video: gymnastics2  Time: 11.2s Speed: 21.4fps Lost: 0
+( 34) Video: gymnastics3  Time:  6.0s Speed: 19.3fps Lost: 1
+( 35) Video: hand         Time: 13.1s Speed: 20.3fps Lost: 2
+( 36) Video: handball1    Time: 17.5s Speed: 21.5fps Lost: 2
+( 37) Video: handball2    Time: 18.3s Speed: 21.9fps Lost: 3
+( 38) Video: helicopter   Time: 33.5s Speed: 21.1fps Lost: 1
+( 39) Video: iceskater1   Time: 31.2s Speed: 21.2fps Lost: 0
+( 40) Video: iceskater2   Time: 34.4s Speed: 20.5fps Lost: 1
+( 41) Video: leaves       Time:  2.6s Speed: 23.5fps Lost: 2
+( 42) Video: matrix       Time:  4.7s Speed: 21.0fps Lost: 0
+( 43) Video: motocross1   Time:  7.5s Speed: 21.8fps Lost: 1
+( 44) Video: motocross2   Time:  2.9s Speed: 20.6fps Lost: 0
+( 45) Video: nature       Time: 47.3s Speed: 21.1fps Lost: 3
+( 46) Video: pedestrian1  Time:  6.5s Speed: 21.4fps Lost: 0
+( 47) Video: rabbit       Time:  6.9s Speed: 22.8fps Lost: 3
+( 48) Video: racing       Time:  7.3s Speed: 21.3fps Lost: 0
+( 49) Video: road         Time: 25.8s Speed: 21.6fps Lost: 1
+( 50) Video: shaking      Time: 17.2s Speed: 21.2fps Lost: 0
+( 51) Video: sheep        Time: 11.7s Speed: 21.4fps Lost: 0
+( 52) Video: singer2      Time: 17.4s Speed: 21.0fps Lost: 0
+( 53) Video: singer3      Time:  6.3s Speed: 20.6fps Lost: 0
+( 54) Video: soccer1      Time: 18.1s Speed: 21.7fps Lost: 3
+( 55) Video: soccer2      Time:  5.8s Speed: 22.2fps Lost: 1
+( 56) Video: soldier      Time:  6.2s Speed: 21.9fps Lost: 1
+( 57) Video: tiger        Time: 17.2s Speed: 21.1fps Lost: 0
+( 58) Video: traffic      Time:  8.9s Speed: 21.5fps Lost: 0
+( 59) Video: wiper        Time: 15.7s Speed: 21.7fps Lost: 1
+( 60) Video: zebrafish1   Time: 18.6s Speed: 21.4fps Lost: 0
+model total lost: 53
+
+Process finished with exit code 0
+/home/ubuntu/anaconda3/envs/pytorch/bin/python /home/ubuntu/Desktop/Object_Track/SiamTrackers/tools/test.py
+loading VOT2018: 100%|██████████████████████████████████| 60/60 [00:00<00:00, 93.72it/s, zebrafish1]
+(  1) Video: ants1        Time: 15.0s Speed: 21.6fps Lost: 0
+(  2) Video: ants3        Time: 26.5s Speed: 21.8fps Lost: 2
+(  3) Video: bag          Time:  9.1s Speed: 21.4fps Lost: 0
+(  4) Video: ball1        Time:  4.8s Speed: 21.6fps Lost: 0
+(  5) Video: ball2        Time:  1.9s Speed: 21.4fps Lost: 0
+(  6) Video: basketball   Time: 33.4s Speed: 21.7fps Lost: 1
+(  7) Video: birds1       Time: 15.7s Speed: 21.6fps Lost: 0
+(  8) Video: blanket      Time: 11.6s Speed: 19.4fps Lost: 1
+(  9) Video: bmx          Time:  3.5s Speed: 21.1fps Lost: 0
+( 10) Video: bolt1        Time: 16.2s Speed: 21.5fps Lost: 0
+( 11) Video: bolt2        Time: 13.2s Speed: 22.1fps Lost: 2
+( 12) Video: book         Time: 11.6s Speed: 15.0fps Lost: 1
+( 13) Video: butterfly    Time: 10.0s Speed: 15.0fps Lost: 0
+( 14) Video: car1         Time: 35.0s Speed: 21.2fps Lost: 0
+( 15) Video: conduction1  Time: 15.9s Speed: 21.7fps Lost: 2
+( 16) Video: crabs1       Time:  6.8s Speed: 23.4fps Lost: 3
+( 17) Video: crossing     Time:  6.1s Speed: 21.1fps Lost: 0
+( 18) Video: dinosaur     Time: 15.2s Speed: 21.4fps Lost: 2
+( 19) Video: drone1       Time: 16.2s Speed: 21.9fps Lost: 2
+( 20) Video: drone_across Time:  6.8s Speed: 21.4fps Lost: 0
+( 21) Video: drone_flip   Time:  4.9s Speed: 23.0fps Lost: 2
+( 22) Video: fernando     Time: 14.1s Speed: 20.7fps Lost: 1
+( 23) Video: fish1        Time: 17.0s Speed: 21.5fps Lost: 1
+( 24) Video: fish2        Time: 14.2s Speed: 21.8fps Lost: 1
+( 25) Video: fish3        Time: 24.2s Speed: 21.4fps Lost: 0
+( 26) Video: flamingo1    Time: 63.5s Speed: 21.7fps Lost: 2
+( 27) Video: frisbee      Time: 12.3s Speed: 20.0fps Lost: 2
+( 28) Video: girl         Time: 70.1s Speed: 21.4fps Lost: 2
+( 29) Video: glove        Time:  5.6s Speed: 21.1fps Lost: 1
+( 30) Video: godfather    Time: 17.0s Speed: 21.5fps Lost: 1
+( 31) Video: graduate     Time: 39.8s Speed: 21.2fps Lost: 0
+( 32) Video: gymnastics1  Time: 26.9s Speed: 21.0fps Lost: 0
+( 33) Video: gymnastics2  Time: 11.3s Speed: 21.2fps Lost: 0
+( 34) Video: gymnastics3  Time:  5.8s Speed: 20.1fps Lost: 2
+( 35) Video: hand         Time: 13.5s Speed: 19.6fps Lost: 2
+( 36) Video: handball1    Time: 17.1s Speed: 22.0fps Lost: 2
+( 37) Video: handball2    Time: 18.1s Speed: 22.2fps Lost: 3
+( 38) Video: helicopter   Time: 33.2s Speed: 21.3fps Lost: 1
+( 39) Video: iceskater1   Time: 31.2s Speed: 21.2fps Lost: 0
+( 40) Video: iceskater2   Time: 34.0s Speed: 20.7fps Lost: 1
+( 41) Video: leaves       Time:  2.6s Speed: 23.4fps Lost: 2
+( 42) Video: matrix       Time:  4.8s Speed: 20.8fps Lost: 0
+( 43) Video: motocross1   Time:  7.5s Speed: 21.8fps Lost: 1
+( 44) Video: motocross2   Time:  2.9s Speed: 20.6fps Lost: 0
+( 45) Video: nature       Time: 47.6s Speed: 21.0fps Lost: 3
+( 46) Video: pedestrian1  Time:  6.5s Speed: 21.4fps Lost: 0
+( 47) Video: rabbit       Time:  7.1s Speed: 22.2fps Lost: 3
+( 48) Video: racing       Time:  7.3s Speed: 21.3fps Lost: 0
+( 49) Video: road         Time: 25.8s Speed: 21.6fps Lost: 1
+( 50) Video: shaking      Time: 17.2s Speed: 21.2fps Lost: 0
+( 51) Video: sheep        Time: 11.7s Speed: 21.4fps Lost: 0
+( 52) Video: singer2      Time: 17.4s Speed: 21.0fps Lost: 0
+( 53) Video: singer3      Time:  6.6s Speed: 19.7fps Lost: 0
+( 54) Video: soccer1      Time: 18.1s Speed: 21.5fps Lost: 3
+( 55) Video: soccer2      Time:  5.8s Speed: 22.2fps Lost: 1
+( 56) Video: soldier      Time:  6.2s Speed: 22.0fps Lost: 1
+( 57) Video: tiger        Time: 17.2s Speed: 21.1fps Lost: 0
+( 58) Video: traffic      Time:  8.9s Speed: 21.4fps Lost: 0
+( 59) Video: wiper        Time: 15.6s Speed: 21.7fps Lost: 1
+( 60) Video: zebrafish1   Time: 18.7s Speed: 21.4fps Lost: 0
+model total lost: 56
+
+Process finished with exit code 0
+
+
