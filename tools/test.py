@@ -23,7 +23,7 @@ from toolkit.utils.region import vot_overlap, vot_float2str
 from template_TSA.siamta_tracker import SiamTATracker
 from optical_flow.siamof_tracker import SiamOFTracker
 from optical_flow.siamMF_tracker import SiamMFTracker
-from optical_flow.SiamPWC_tracker import SiamPWCTracker
+# from optical_flow.SiamPWC_tracker import SiamPWCTracker
 from template_update.Tu_SiamRPNpp import TU_SiamRPNTracker
 
 parser = argparse.ArgumentParser(description='siamrpn tracking')

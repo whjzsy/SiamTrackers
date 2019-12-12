@@ -118,6 +118,7 @@ class TU_SiamRPNTracker(SiameseTracker):
                                     cfg.TRACK.EXEMPLAR_SIZE,
                                     s_z, self.channel_average)
         self.model.template(z_crop)
+        self.init_template = self.model.zf
 
     def update_template(self, img):
 
@@ -209,6 +210,8 @@ class TU_SiamRPNTracker(SiameseTracker):
         if best_score > 0.95:
             # 更新匹配模板
             self.update_template(img)
+        else:
+            self.model.zf = self.init_template
 
         return {
                 'bbox': bbox,

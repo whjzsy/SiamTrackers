@@ -3,6 +3,7 @@
 import numpy as np
 import PIL
 import matplotlib.pyplot as plt
+
 def make_color_wheel():
     """
     Generate color wheel according Middlebury color code
