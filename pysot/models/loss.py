@@ -16,8 +16,11 @@ def get_cls_loss(pred, label, select):
     # if select.nelement() == 0:
     #     return 0
     pred = torch.index_select(pred, 0, select)
+    if pred.nelement() == 0:
+        return 0
     # print(pred.shape)
     label = torch.index_select(label, 0, select)
+    # print (pred.shape)
     return F.nll_loss(pred, label)
 
 

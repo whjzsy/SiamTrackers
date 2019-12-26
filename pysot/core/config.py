@@ -148,24 +148,24 @@ __C.DATASET.VID.VALANNO = '../training_dataset/vid/val.json'
 
 
 __C.DATASET.YOUTUBEBB = CN()
-__C.DATASET.YOUTUBEBB.ROOT = 'training_dataset/yt_bb/crop511'
-__C.DATASET.YOUTUBEBB.ANNO = 'training_dataset/yt_bb/train.json'
+__C.DATASET.YOUTUBEBB.ROOT = '../training_dataset/yt_bb/crop511'
+__C.DATASET.YOUTUBEBB.ANNO = '../training_dataset/yt_bb/train.json'
 __C.DATASET.YOUTUBEBB.FRAME_RANGE = 3
 __C.DATASET.YOUTUBEBB.NUM_USE = -1  # use all not repeat
 
 __C.DATASET.COCO = CN()
-__C.DATASET.COCO.ROOT = 'training_dataset/coco/crop511'
-__C.DATASET.COCO.ANNO = 'training_dataset/coco/train2017.json'
+__C.DATASET.COCO.ROOT = '../training_dataset/coco/crop511'
+__C.DATASET.COCO.ANNO = '../training_dataset/coco/train2017.json'
 __C.DATASET.COCO.FRAME_RANGE = 1
 __C.DATASET.COCO.NUM_USE = -1
 
 __C.DATASET.DET = CN()
-__C.DATASET.DET.ROOT = 'training_dataset/det/crop511'
-__C.DATASET.DET.ANNO = 'training_dataset/det/train.json'
+__C.DATASET.DET.ROOT = '../training_dataset/det/crop511'
+__C.DATASET.DET.ANNO = '../training_dataset/det/train.json'
 __C.DATASET.DET.FRAME_RANGE = 1
 __C.DATASET.DET.NUM_USE = -1
 
-__C.DATASET.VIDEOS_PER_EPOCH = 600000
+__C.DATASET.VIDEOS_PER_EPOCH = 600
 # ------------------------------------------------------------------------ #
 # Backbone options
 # ------------------------------------------------------------------------ #
