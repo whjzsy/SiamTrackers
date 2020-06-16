@@ -26,6 +26,7 @@ class AnchorTarget:
 
         # -1 ignore 0 negative 1 positive
         cls = -1 * np.ones((anchor_num, size, size), dtype=np.int64)
+        # cls = 0 * np.ones((anchor_num, size, size), dtype=np.int64)
         delta = np.zeros((4, anchor_num, size, size), dtype=np.float32)
         delta_weight = np.zeros((anchor_num, size, size), dtype=np.float32)
 
@@ -44,7 +45,7 @@ class AnchorTarget:
             # l = size // 2 - 3
             # r = size // 2 + 3 + 1
             # cls[:, l:r, l:r] = 0
-
+            # print("In neg State")
             cx = size // 2
             cy = size // 2
             cx += int(np.ceil((tcx - cfg.TRAIN.SEARCH_SIZE // 2) /

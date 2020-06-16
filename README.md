@@ -1,11 +1,9 @@
 # SiamTrack
 
-## SiamGRPN Neural network architecture
-&emsp;&emsp;在SiamRPN的基础上重新设计了网络结构,总共包括五个改进步骤:`backbone
-的替换`,`glide vertex Bbox Regression`,`Center-ness Branch`, 
-`边框回归损失的选择`.改进后的跟踪器网络命名为SiamGRPN, 网络的整体架构如下图所示:
+## SiamPolar 
+&emsp;&emsp;在SiamRPN的基础上重新设计了网络结构,总共包括五个改进步骤:`glide vertex Bbox Regression`,`FCOS head`, 
+`D_iou Loss`,`MultiDepthwise correlation`, `Polar head`, `Deep Snake`, `Search region prediction`.改进后的跟踪器网络命名为SiamGRPN, 网络的整体架构如下图所示:
 
-![Alt-text](./Img/SiamTFEM_Architecture.jpg "SiamTFEM architecture")
 
 
 ### EfficientNet的使用
@@ -21,22 +19,17 @@ et.如下图所示,一般在ImageNet目标检测任务上表现较好的特征�
 
 ![Alt-text](./Img/backbone.JPG)
 
-&emsp;&emsp;考虑到跟踪器的实时性,只针对EfficientNetB0~B6在DaSiamRPN基础上
-展开实验.训练的数据集使用`COCO`,`ImageNet DET`,`ImageNet VID`,`YouTube-BB`
-(YouTube-bb数据集暂时不参与训练).初步使用的测试数据集`VOT2018`,`VOT2019`.
+&emsp;&emsp; 由于 Efficient 采用搜索的框架, 训练起来对硬件的要求很高.占时放弃.....
 
-### Center-ness Branch(FCOS)
+### FCOS head(FCOS) + D_iou Loss
 
-&emsp;&emsp;
+&emsp;&emsp;使用One stage Detector 的 FCOS head 替换 RPN head, 之后 FCOS head 
+中IOU Loss 使用 D_iou loss. 代码已完成, 训练部分未进行....
 
 ### Glide Vertex Bbox Regression
 
 &emsp;&emsp;
 
+### PolarMask head 
 
-
-### the choice of Bbox Regression Loss
- 
-&emsp;&emsp;
-
-### Template Feature Enhancement Mechanism 
+### Deep Snake

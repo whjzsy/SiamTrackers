@@ -1,4 +1,5 @@
 # Copyright (c) SenseTime. All Rights Reserved.
+# 添加FCOS Head ==>> DepthwiseFCOS
 
 from __future__ import absolute_import
 from __future__ import division
@@ -9,7 +10,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from pysot.core.xcorr import xcorr_fast, xcorr_depthwise
+from pysot.core.xcorr import xcorr_fast, xcorr_depthwise, multixcorr_depthwise
 from pysot.models.init_weight import init_weights
 
 class RPN(nn.Module):
@@ -52,8 +53,10 @@ class UPChannelRPN(RPN):
 
 
 class DepthwiseXCorr(nn.Module):
-    def __init__(self, in_channels, hidden, out_channels, kernel_size=3, hidden_kernel_size=5):
+    def __init__(self, in_channels, hidden, out_channels, kernel_size=3, hidden_kernel_size=5, Center_ness=False, Glide_vertex=False):
         super(DepthwiseXCorr, self).__init__()
+        self.center_ness = Center_ness
+        self.glide_vertex = Glide_vertex
         self.conv_kernel = nn.Sequential(
                 nn.Conv2d(in_channels, hidden, kernel_size=kernel_size, bias=False),
                 nn.BatchNorm2d(hidden),
@@ -64,19 +67,52 @@ class DepthwiseXCorr(nn.Module):
                 nn.BatchNorm2d(hidden),
                 nn.ReLU(inplace=True),
                 )
+        #CNN
         self.head = nn.Sequential(
                 nn.Conv2d(hidden, hidden, kernel_size=1, bias=False),
                 nn.BatchNorm2d(hidden),
                 nn.ReLU(inplace=True),
                 nn.Conv2d(hidden, out_channels, kernel_size=1)
                 )
+        #get_center_ness
+        if self.center_ness:
+            self.get_center_ness = nn.Sequential(
+                nn.Conv2d(hidden, hidden, kernel_size=1, bias=False),
+                nn.BatchNorm2d(hidden),
+                nn.ReLU(inplace=True),
+                nn.Conv2d(hidden, 1, kernel_size=1)
+            )
+        #get glide_vertex
+        if self.glide_vertex:
+            self.get_glide_vertex = nn.Sequential(
+                nn.Conv2d(hidden, hidden, kernel_size=1, bias=False),
+                nn.BatchNorm2d(hidden),
+                nn.ReLU(inplace=True),
+                nn.Conv2d(hidden, 4, kernel_size=1)
+            )
+            #get_overlap_rate
+            self.get_overlap_rate = nn.Sequential(
+                nn.Conv2d(hidden, hidden, kernel_size=1, bias=False),
+                nn.BatchNorm2d(hidden),
+                nn.ReLU(inplace=True),
+                nn.Conv2d(hidden, 1, kernel_size=1)
+            )
         
 
     def forward(self, kernel, search):
         kernel = self.conv_kernel(kernel)
         search = self.conv_search(search)
-        feature = xcorr_depthwise(search, kernel)
+        feature = xcorr_depthwise_1(search, kernel)
         out = self.head(feature)
+
+        if self.center_ness:
+            center_ness = self.get_center_ness(feature)
+            return out, center_ness
+        if self.glide_vertex:
+            glide_vertex = self.get_glide_vertex(feature)
+            overlap_rate = self.get_overlap_rate(feature)
+            return out, glide_vertex, overlap_rate
+
         return out
 
 
@@ -91,6 +127,62 @@ class DepthwiseRPN(RPN):
         loc = self.loc(z_f, x_f)
         return cls, loc
 
+class MultiDepthwiseXcorr(nn.Module):
+    def __init__(self, in_channels, hidden, out_channels, kernel_size=3, hidden_kernel_size=5, multi_num=3):
+        super(MultiDepthwiseXcorr, self).__init__()
+        self.conv_kernel = nn.Sequential(
+            nn.Conv2d(in_channels, hidden, kernel_size=kernel_size, bias=False),
+            nn.BatchNorm2d(hidden),
+            nn.ReLU(inplace=True),
+        )
+        self.conv_search = nn.Sequential(
+            nn.Conv2d(in_channels, hidden, kernel_size=kernel_size, bias=False),
+            nn.BatchNorm2d(hidden),
+            nn.ReLU(inplace=True),
+        )
+        # Adjust Layer
+        self.downsample = nn.Sequential(
+            nn.Conv2d(in_channels*multi_num, hidden, kernel_size=1, bias=False),
+            nn.BatchNorm2d(hidden),
+        )
+        # CNN
+        self.head = nn.Sequential(
+            nn.Conv2d(hidden, hidden, kernel_size=1, bias=False),
+            nn.BatchNorm2d(hidden),
+            nn.ReLU(inplace=True),
+            nn.Conv2d(hidden, out_channels, kernel_size=1)
+        )
+
+    def forward(self, kernel, search):
+        kernel = self.conv_kernel(kernel)
+        search = self.conv_search(search)
+        feature = multixcorr_depthwise(search, kernel)
+        feature = self.downsample(feature)
+        out = self.head(feature)
+        return out
+
+class MultiDepthwiseRPN(RPN):
+    def __init__(self, anchor_num=5, in_channels=256, out_channels=256, multi_num=3):
+        super(MultiDepthwiseRPN, self).__init__()
+        self.cls = MultiDepthwiseXcorr(in_channels, out_channels, 2 * anchor_num, multi_num=multi_num)
+        self.loc = MultiDepthwiseXcorr(in_channels, out_channels, 4 * anchor_num, multi_num=multi_num)
+
+    def forward(self, z_f, x_f):
+        cls = self.cls(z_f, x_f)
+        loc = self.loc(z_f, x_f)
+        return cls, loc
+
+# 1@:在RPN的基础上添加一个center-ness 分支给目标定位
+class DepthwiseCRPN(RPN):
+    def __init__(self, anchor_num=5, in_channels=256, out_channels=256):
+        super(DepthwiseCRPN, self).__init__()
+        self.cls = DepthwiseXCorr(in_channels, out_channels, 2 * anchor_num)
+        self.loc = DepthwiseXCorr(in_channels, out_channels, 4 * anchor_num)
+
+    def forward(self, z_f, x_f):
+        cls, cen = self.cls(z_f, x_f)
+        loc = self.loc(z_f, x_f)
+        return cls, cen, loc
 
 class MultiRPN(RPN):
     def __init__(self, anchor_num, in_channels, weighted=False):

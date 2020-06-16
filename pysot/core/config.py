@@ -16,6 +16,17 @@ __C.META_ARC = "siamrpn_r50_l234_dwxcorr"
 __C.CUDA = True
 
 # ------------------------------------------------------------------------ #
+# Testing options
+# ------------------------------------------------------------------------ #
+__C.TEST = CN()
+
+__C.TEST.NUM_CLASSES = 2
+
+__C.TEST.NUM_CONVS = 4
+
+__C.TEST.PRIOR_PROB = 0.01
+
+# ------------------------------------------------------------------------ #
 # Training options
 # ------------------------------------------------------------------------ #
 __C.TRAIN = CN()
@@ -66,6 +77,8 @@ __C.TRAIN.MOMENTUM = 0.9
 __C.TRAIN.WEIGHT_DECAY = 0.0001
 
 __C.TRAIN.CLS_WEIGHT = 1.0
+
+__C.TRAIN.CEN_WEIGHT = 1.2
 
 __C.TRAIN.LOC_WEIGHT = 1.2
 
@@ -212,6 +225,23 @@ __C.RPN.TYPE = 'MultiRPN'
 __C.RPN.KWARGS = CN(new_allowed=True)
 
 # ------------------------------------------------------------------------ #
+# fcos options
+# ------------------------------------------------------------------------ #
+__C.FCOS = CN()
+
+# Fcos type
+__C.FCOS.TYPE = "DepthwiseFCOS"
+
+__C.FCOS.KWARGS = CN(new_allowed=True)
+
+__C.FCOS.FOCAL_LOSS_GAMMA = 2.0
+
+__C.FCOS.FOCAL_LOSS_ALPHA = 0.25
+
+__C.FCOS.IOU_LOSS_TYPE = "iou"
+
+
+# ------------------------------------------------------------------------ #
 # mask options
 # ------------------------------------------------------------------------ #
 __C.MASK = CN()
@@ -270,6 +300,7 @@ __C.TSA.SEQUENCE_NUM = 32
 __C.TSA.BATCH_SIZE_EVAL = 2
 __C.TSA.NUM_EPOCH_EVAL = 1073
 __C.TSA.MAX_ITERATIONS_EVAL = __C.TSA.NUM_EPOCH_EVAL // __C.TSA.BATCH_SIZE_EVAL
+
 # ------------------------------------------------------------------------ #
 # Tracker options
 # ------------------------------------------------------------------------ #
@@ -312,3 +343,31 @@ __C.TRACK.MASK_THERSHOLD = 0.30
 
 # Mask output size
 __C.TRACK.MASK_OUTPUT_SIZE = 127
+
+# UPSIZE
+__C.TRACK.UPSIZE = 193
+
+# Score size
+__C.TRACK.SCORE_SIZE = 25
+
+# if add hanming
+__C.TRACK.hanming = True
+
+# if use average bbox
+__C.TRACK.ave_reg = True
+
+# ------------------------------------------------------------------------ #
+# HP_SEARCH parameters
+# ------------------------------------------------------------------------ #
+
+__C.HP_SEARCH = CN()
+
+__C.HP_SEARCH.OTB = [0.15, 0.1, 0.4]
+
+__C.HP_SEARCH.GOT = [0.6, 0.04, 0.1]
+
+__C.HP_SEARCH.UAV123 = [0.39, 0.04, 0.37]
+
+__C.HP_SEARCH.VOT2019 = [0.41, 0.04, 0.3]
+
+__C.HP_SEARCH.LaSOT = [0.33, 0.04, 0.40]
