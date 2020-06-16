@@ -69,7 +69,7 @@ class MultiFCOS(FCOS):
 
 class DepthwiseGVFCOS(FCOS):
     def __init__(self, in_channels=256, out_channels=256):
-        super(DepthwiseFCOS, self).__init__()
+        super(DepthwiseGVFCOS, self).__init__()
         self.cls = DepthwiseXCorr(in_channels, out_channels, 1, Center_ness=True)
         self.loc = DepthwiseXCorr(in_channels, out_channels, 4, Glide_vertex=True)
 

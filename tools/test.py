@@ -29,9 +29,9 @@ from template_update.Tu_SiamRPNpp import TU_SiamRPNTracker
 parser = argparse.ArgumentParser(description='siamrpn tracking')
 parser.add_argument('--dataset', default='VOT2018', type=str,
         help='datasets')
-parser.add_argument('--config', default='/home/ubuntu/Desktop/Object_Track/SiamTrackers/experiments/siamrpn_r50_l234_dwxcorr/config.yaml', type=str,
+parser.add_argument('--config', default='', type=str,
         help='config file')
-parser.add_argument('--snapshot', default='/home/ubuntu/Desktop/Object_Track/SiamTrackers/experiments/siamrpn_r50_l234_dwxcorr/model.pth', type=str,
+parser.add_argument('--snapshot', default='', type=str,
         help='snapshot of models to eval')
 parser.add_argument('--video', default='', type=str,
         help='eval one special video')
@@ -55,8 +55,8 @@ def main():
     model = load_pretrain(model, args.snapshot).cuda().eval()
 
     # build tracker
-    tracker = TU_SiamRPNTracker(model)
-    # tracker = build_tracker(model)
+    # tracker = TU_SiamRPNTracker(model)
+    tracker = build_tracker(model)
 
     # create datasets
     dataset = DatasetFactory.create_dataset(name=args.dataset,
